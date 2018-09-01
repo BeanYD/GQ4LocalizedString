@@ -8,6 +8,10 @@
 
 #import "ViewController.h"
 
+@interface ViewController()
+
+@end
+
 @implementation ViewController
 
 - (void)viewDidLoad {
@@ -16,12 +20,26 @@
     // Do any additional setup after loading the view.
 }
 
-
-- (void)setRepresentedObject:(id)representedObject {
-    [super setRepresentedObject:representedObject];
-
-    // Update the view, if already loaded.
+// 浏览按钮
+- (IBAction)browseButtonClick:(id)sender {
 }
+
+// excel检测空格
+- (IBAction)excelScanSpaceButtonClick:(id)sender {
+}
+
+// excel检测占位符
+- (IBAction)excelScanPlaceHoderButtonClick:(id)sender {
+}
+
+// iOS的string文件检测空格
+- (IBAction)stringScanSpaceButtonClick:(id)sender {
+}
+
+// iOS的string文件检测占位符
+- (IBAction)stringScanPlaceHodlerButtonClick:(id)sender {
+}
+
 
 
 @end

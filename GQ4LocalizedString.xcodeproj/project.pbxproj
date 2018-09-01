@@ -14,6 +14,10 @@
 		D7269EAF213B579B0091F571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EAE213B579B0091F571 /* main.m */; };
 		D7269EBA213B579C0091F571 /* GQ4LocalizedStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EB9213B579C0091F571 /* GQ4LocalizedStringTests.m */; };
 		D7269EC5213B579C0091F571 /* GQ4LocalizedStringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EC4213B579C0091F571 /* GQ4LocalizedStringUITests.m */; };
+		D7269EDA213B5B5B0091F571 /* GQResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269ED8213B5B5B0091F571 /* GQResultViewController.m */; };
+		D7269EDB213B5B5B0091F571 /* GQResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7269ED9213B5B5B0091F571 /* GQResultViewController.xib */; };
+		D7269EDF213B5BA50091F571 /* GQResultWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EDD213B5BA50091F571 /* GQResultWindowController.m */; };
+		D7269EE0213B5BA50091F571 /* GQResultWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,12 @@
 		D7269EC0213B579C0091F571 /* GQ4LocalizedStringUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GQ4LocalizedStringUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7269EC4213B579C0091F571 /* GQ4LocalizedStringUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQ4LocalizedStringUITests.m; sourceTree = "<group>"; };
 		D7269EC6213B579C0091F571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7269ED7213B5B5B0091F571 /* GQResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQResultViewController.h; sourceTree = "<group>"; };
+		D7269ED8213B5B5B0091F571 /* GQResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQResultViewController.m; sourceTree = "<group>"; };
+		D7269ED9213B5B5B0091F571 /* GQResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GQResultViewController.xib; sourceTree = "<group>"; };
+		D7269EDC213B5BA50091F571 /* GQResultWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQResultWindowController.h; sourceTree = "<group>"; };
+		D7269EDD213B5BA50091F571 /* GQResultWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQResultWindowController.m; sourceTree = "<group>"; };
+		D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GQResultWindowController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,7 @@
 				D7269EA3213B579B0091F571 /* AppDelegate.m */,
 				D7269EA5213B579B0091F571 /* ViewController.h */,
 				D7269EA6213B579B0091F571 /* ViewController.m */,
+				D7269ED2213B5B400091F571 /* Result */,
 				D7269EA8213B579B0091F571 /* Assets.xcassets */,
 				D7269EAA213B579B0091F571 /* Main.storyboard */,
 				D7269EAD213B579B0091F571 /* Info.plist */,
@@ -129,6 +140,51 @@
 				D7269EC6213B579C0091F571 /* Info.plist */,
 			);
 			path = GQ4LocalizedStringUITests;
+			sourceTree = "<group>";
+		};
+		D7269ED2213B5B400091F571 /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				D7269ED3213B5B400091F571 /* Controller */,
+				D7269ED4213B5B400091F571 /* Model */,
+				D7269ED5213B5B400091F571 /* View */,
+				D7269ED6213B5B400091F571 /* Service */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		D7269ED3213B5B400091F571 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D7269EDC213B5BA50091F571 /* GQResultWindowController.h */,
+				D7269EDD213B5BA50091F571 /* GQResultWindowController.m */,
+				D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */,
+				D7269ED7213B5B5B0091F571 /* GQResultViewController.h */,
+				D7269ED8213B5B5B0091F571 /* GQResultViewController.m */,
+				D7269ED9213B5B5B0091F571 /* GQResultViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D7269ED4213B5B400091F571 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7269ED5213B5B400091F571 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7269ED6213B5B400091F571 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +290,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7269EE0213B5BA50091F571 /* GQResultWindowController.xib in Resources */,
 				D7269EA9213B579B0091F571 /* Assets.xcassets in Resources */,
+				D7269EDB213B5B5B0091F571 /* GQResultViewController.xib in Resources */,
 				D7269EAC213B579B0091F571 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +319,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7269EA7213B579B0091F571 /* ViewController.m in Sources */,
+				D7269EDA213B5B5B0091F571 /* GQResultViewController.m in Sources */,
+				D7269EDF213B5BA50091F571 /* GQResultWindowController.m in Sources */,
 				D7269EAF213B579B0091F571 /* main.m in Sources */,
 				D7269EA4213B579B0091F571 /* AppDelegate.m in Sources */,
 			);

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D7269EA4213B579B0091F571 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EA3213B579B0091F571 /* AppDelegate.m */; };
-		D7269EA7213B579B0091F571 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EA6213B579B0091F571 /* ViewController.m */; };
 		D7269EA9213B579B0091F571 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7269EA8213B579B0091F571 /* Assets.xcassets */; };
 		D7269EAC213B579B0091F571 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7269EAA213B579B0091F571 /* Main.storyboard */; };
 		D7269EAF213B579B0091F571 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EAE213B579B0091F571 /* main.m */; };
@@ -18,6 +17,16 @@
 		D7269EDB213B5B5B0091F571 /* GQResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7269ED9213B5B5B0091F571 /* GQResultViewController.xib */; };
 		D7269EDF213B5BA50091F571 /* GQResultWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EDD213B5BA50091F571 /* GQResultWindowController.m */; };
 		D7269EE0213B5BA50091F571 /* GQResultWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */; };
+		D72B9FDE213FB4060082FA24 /* GQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FDB213FB4060082FA24 /* GQMainViewController.m */; };
+		D72B9FDF213FB41C0082FA24 /* GQMainViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FDA213FB4060082FA24 /* GQMainViewController.h */; };
+		D72B9FE0213FB42B0082FA24 /* GQResultWindowController.h in Sources */ = {isa = PBXBuildFile; fileRef = D7269EDC213B5BA50091F571 /* GQResultWindowController.h */; };
+		D72B9FE1213FB42B0082FA24 /* GQResultWindowController.xib in Sources */ = {isa = PBXBuildFile; fileRef = D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */; };
+		D72B9FE2213FB42B0082FA24 /* GQResultViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = D7269ED7213B5B5B0091F571 /* GQResultViewController.h */; };
+		D72B9FE3213FB42B0082FA24 /* GQResultViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = D7269ED9213B5B5B0091F571 /* GQResultViewController.xib */; };
+		D72B9FE6213FB4730082FA24 /* GQMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE5213FB4730082FA24 /* GQMainModel.m */; };
+		D72B9FEA213FB8250082FA24 /* HSAlertShowTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE9213FB8250082FA24 /* HSAlertShowTool.m */; };
+		D72B9FEB213FB8340082FA24 /* HSAlertShowTool.h in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE8213FB8250082FA24 /* HSAlertShowTool.h */; };
+		D72B9FEC213FB83D0082FA24 /* GQMainModel.h in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE4213FB4730082FA24 /* GQMainModel.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,8 +50,6 @@
 		D7269E9F213B579B0091F571 /* GQ4LocalizedString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GQ4LocalizedString.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7269EA2213B579B0091F571 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7269EA3213B579B0091F571 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D7269EA5213B579B0091F571 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D7269EA6213B579B0091F571 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D7269EA8213B579B0091F571 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7269EAB213B579B0091F571 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7269EAD213B579B0091F571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +67,12 @@
 		D7269EDC213B5BA50091F571 /* GQResultWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQResultWindowController.h; sourceTree = "<group>"; };
 		D7269EDD213B5BA50091F571 /* GQResultWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQResultWindowController.m; sourceTree = "<group>"; };
 		D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GQResultWindowController.xib; sourceTree = "<group>"; };
+		D72B9FDA213FB4060082FA24 /* GQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQMainViewController.h; sourceTree = "<group>"; };
+		D72B9FDB213FB4060082FA24 /* GQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQMainViewController.m; sourceTree = "<group>"; };
+		D72B9FE4213FB4730082FA24 /* GQMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQMainModel.h; sourceTree = "<group>"; };
+		D72B9FE5213FB4730082FA24 /* GQMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQMainModel.m; sourceTree = "<group>"; };
+		D72B9FE8213FB8250082FA24 /* HSAlertShowTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSAlertShowTool.h; sourceTree = "<group>"; };
+		D72B9FE9213FB8250082FA24 /* HSAlertShowTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSAlertShowTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,8 +125,8 @@
 			children = (
 				D7269EA2213B579B0091F571 /* AppDelegate.h */,
 				D7269EA3213B579B0091F571 /* AppDelegate.m */,
-				D7269EA5213B579B0091F571 /* ViewController.h */,
-				D7269EA6213B579B0091F571 /* ViewController.m */,
+				D72B9FE7213FB8250082FA24 /* Tools */,
+				D72B9FD8213FB4060082FA24 /* Main */,
 				D7269ED2213B5B400091F571 /* Result */,
 				D7269EA8213B579B0091F571 /* Assets.xcassets */,
 				D7269EAA213B579B0091F571 /* Main.storyboard */,
@@ -145,10 +158,9 @@
 		D7269ED2213B5B400091F571 /* Result */ = {
 			isa = PBXGroup;
 			children = (
+				D72B9FD3213FAD2C0082FA24 /* Model */,
+				D72B9FD4213FAD2C0082FA24 /* View */,
 				D7269ED3213B5B400091F571 /* Controller */,
-				D7269ED4213B5B400091F571 /* Model */,
-				D7269ED5213B5B400091F571 /* View */,
-				D7269ED6213B5B400091F571 /* Service */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -166,25 +178,62 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		D7269ED4213B5B400091F571 /* Model */ = {
+		D72B9FD3213FAD2C0082FA24 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D7269ED5213B5B400091F571 /* View */ = {
+		D72B9FD4213FAD2C0082FA24 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = View;
 			sourceTree = "<group>";
 		};
-		D7269ED6213B5B400091F571 /* Service */ = {
+		D72B9FD8213FB4060082FA24 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D72B9FD9213FB4060082FA24 /* Controller */,
+				D72B9FDC213FB4060082FA24 /* Model */,
+				D72B9FDD213FB4060082FA24 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D72B9FD9213FB4060082FA24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D72B9FDA213FB4060082FA24 /* GQMainViewController.h */,
+				D72B9FDB213FB4060082FA24 /* GQMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D72B9FDC213FB4060082FA24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D72B9FE4213FB4730082FA24 /* GQMainModel.h */,
+				D72B9FE5213FB4730082FA24 /* GQMainModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D72B9FDD213FB4060082FA24 /* View */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Service;
+			path = View;
+			sourceTree = "<group>";
+		};
+		D72B9FE7213FB8250082FA24 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				D72B9FE8213FB8250082FA24 /* HSAlertShowTool.h */,
+				D72B9FE9213FB8250082FA24 /* HSAlertShowTool.m */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,9 +367,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7269EA7213B579B0091F571 /* ViewController.m in Sources */,
-				D7269EDA213B5B5B0091F571 /* GQResultViewController.m in Sources */,
+				D72B9FEC213FB83D0082FA24 /* GQMainModel.h in Sources */,
+				D72B9FE6213FB4730082FA24 /* GQMainModel.m in Sources */,
+				D72B9FEB213FB8340082FA24 /* HSAlertShowTool.h in Sources */,
+				D72B9FEA213FB8250082FA24 /* HSAlertShowTool.m in Sources */,
+				D72B9FE0213FB42B0082FA24 /* GQResultWindowController.h in Sources */,
 				D7269EDF213B5BA50091F571 /* GQResultWindowController.m in Sources */,
+				D72B9FE1213FB42B0082FA24 /* GQResultWindowController.xib in Sources */,
+				D72B9FE2213FB42B0082FA24 /* GQResultViewController.h in Sources */,
+				D7269EDA213B5B5B0091F571 /* GQResultViewController.m in Sources */,
+				D72B9FE3213FB42B0082FA24 /* GQResultViewController.xib in Sources */,
+				D72B9FDF213FB41C0082FA24 /* GQMainViewController.h in Sources */,
+				D72B9FDE213FB4060082FA24 /* GQMainViewController.m in Sources */,
 				D7269EAF213B579B0091F571 /* main.m in Sources */,
 				D7269EA4213B579B0091F571 /* AppDelegate.m in Sources */,
 			);

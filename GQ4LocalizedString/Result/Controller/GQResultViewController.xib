@@ -53,7 +53,7 @@
                 <scrollView autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg8-eg-F5M">
                     <rect key="frame" x="0.0" y="0.0" width="587" height="386"/>
                     <clipView key="contentView" id="zlV-rD-Btm">
-                        <rect key="frame" x="1" y="23" width="585" height="362"/>
+                        <rect key="frame" x="1" y="0.0" width="585" height="385"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnSelection="YES" multipleSelection="NO" autosaveColumns="NO" rowHeight="18" rowSizeStyle="automatic" headerView="hZ5-KX-87A" viewBased="YES" id="aH8-Ze-8jA">
@@ -149,7 +149,7 @@
                 <constraint firstItem="Jg8-eg-F5M" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="uwh-qh-e9e"/>
                 <constraint firstItem="yOx-cC-2qr" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="wXn-lj-aVd"/>
             </constraints>
-            <point key="canvasLocation" x="471" y="79"/>
+            <point key="canvasLocation" x="57" y="130"/>
         </customView>
     </objects>
 </document>

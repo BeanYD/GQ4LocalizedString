@@ -16,4 +16,9 @@
 // 获取.strings文件
 - (NSMutableArray *)stringsFileListFromSource:(NSArray *)sourceList;
 
+
+- (NSString *)dataStringFromXlsExcel:(NSString *)path;
+
+- (NSString *)dataStringFromXlsxExcel:(NSString *)path;
+
 @end

@@ -7,12 +7,20 @@
 //
 
 #import "GQMainModel.h"
+#import "DHxlsReaderIOS.h"
+#import "ExcelTool.h"
+
+@interface GQMainModel ()
+
+@property (strong, nonatomic) ExcelTool *excelTool;
+
+@end
 
 @implementation GQMainModel
 
 - (instancetype)init {
     if (self = [super init]) {
-        
+        _excelTool = [[ExcelTool alloc] init];
     }
     
     return self;
@@ -50,6 +58,19 @@
     }
     
     return stringsFiles;
+}
+
+- (NSString *)dataStringFromXlsxExcel:(NSString *)path {
+    
+    return [self.excelTool readExcel_XlsX_WithPath:path]; 
+    
+
+}
+
+
+- (NSString *)dataStringFromXlsExcel:(NSString *)path {
+    
+    return [self.excelTool readExcel_Xls_WithPath:path];
 }
 
 @end

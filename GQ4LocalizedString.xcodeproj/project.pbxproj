@@ -27,6 +27,135 @@
 		D72B9FEA213FB8250082FA24 /* HSAlertShowTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE9213FB8250082FA24 /* HSAlertShowTool.m */; };
 		D72B9FEB213FB8340082FA24 /* HSAlertShowTool.h in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE8213FB8250082FA24 /* HSAlertShowTool.h */; };
 		D72B9FEC213FB83D0082FA24 /* GQMainModel.h in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE4213FB4730082FA24 /* GQMainModel.h */; };
+		D72BA07121425C7B0082FA24 /* libiconv.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D72BA07021425C7B0082FA24 /* libiconv.2.dylib */; };
+		D72BA1CB214648E20082FA24 /* test.xls in Resources */ = {isa = PBXBuildFile; fileRef = D72BA1CA214648E10082FA24 /* test.xls */; };
+		D72BA27121464F600082FA24 /* main11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D72BA25921464F600082FA24 /* main11.cpp */; };
+		D72BA27221464F600082FA24 /* XlsReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D72BA25A21464F600082FA24 /* XlsReader.cpp */; };
+		D72BA27321464F600082FA24 /* DHcell.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA25F21464F600082FA24 /* DHcell.m */; };
+		D72BA27421464F600082FA24 /* DHxlsReaderIOS.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26221464F600082FA24 /* DHxlsReaderIOS.m */; };
+		D72BA27521464F600082FA24 /* getopt.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26C21464F600082FA24 /* getopt.c */; };
+		D72BA27621464F600082FA24 /* ole.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26D21464F600082FA24 /* ole.c */; };
+		D72BA27721464F600082FA24 /* xls.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26E21464F600082FA24 /* xls.c */; };
+		D72BA27821464F600082FA24 /* xls2csv.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26F21464F600082FA24 /* xls2csv.c */; };
+		D72BA27921464F600082FA24 /* xlstool.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA27021464F600082FA24 /* xlstool.c */; };
+		D72BA27D214655AA0082FA24 /* ExcelTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA27C214655AA0082FA24 /* ExcelTool.m */; };
+		D72BA27F214657610082FA24 /* libz.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D72BA27E214657610082FA24 /* libz.1.dylib */; };
+		D72BA2AA214665470082FA24 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D72BA281214665470082FA24 /* Info.plist */; };
+		D72BA2AB214665470082FA24 /* aes_ni.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA285214665470082FA24 /* aes_ni.c */; };
+		D72BA2AC214665470082FA24 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA287214665470082FA24 /* aescrypt.c */; };
+		D72BA2AD214665470082FA24 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA288214665470082FA24 /* aeskey.c */; };
+		D72BA2AE214665470082FA24 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA28A214665470082FA24 /* aestab.c */; };
+		D72BA2AF214665470082FA24 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA28E214665470082FA24 /* fileenc.c */; };
+		D72BA2B0214665470082FA24 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA290214665470082FA24 /* hmac.c */; };
+		D72BA2B1214665470082FA24 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA292214665470082FA24 /* prng.c */; };
+		D72BA2B2214665470082FA24 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA294214665470082FA24 /* pwd2key.c */; };
+		D72BA2B3214665470082FA24 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA296214665470082FA24 /* sha1.c */; };
+		D72BA2B4214665470082FA24 /* crypt.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA298214665470082FA24 /* crypt.c */; };
+		D72BA2B5214665470082FA24 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA29A214665470082FA24 /* ioapi.c */; };
+		D72BA2B6214665470082FA24 /* ioapi_buf.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA29C214665470082FA24 /* ioapi_buf.c */; };
+		D72BA2B7214665470082FA24 /* ioapi_mem.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA29E214665470082FA24 /* ioapi_mem.c */; };
+		D72BA2B8214665470082FA24 /* minishared.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A0214665470082FA24 /* minishared.c */; };
+		D72BA2B9214665470082FA24 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A2214665470082FA24 /* unzip.c */; };
+		D72BA2BA214665470082FA24 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A4214665470082FA24 /* zip.c */; };
+		D72BA2BB214665470082FA24 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A7214665470082FA24 /* SSZipArchive.m */; };
+		D72BA2C7214762A70082FA24 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D72BA2C6214762A70082FA24 /* libxml2.2.dylib */; };
+		D72BA38A214765430082FA24 /* access.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA33A214765430082FA24 /* access.c */; };
+		D72BA38B214765430082FA24 /* alloc.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA33C214765430082FA24 /* alloc.c */; };
+		D72BA38C214765430082FA24 /* attrask.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA33D214765430082FA24 /* attrask.c */; };
+		D72BA38D214765430082FA24 /* attrdict.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA33E214765430082FA24 /* attrdict.c */; };
+		D72BA38E214765430082FA24 /* attrget.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA340214765430082FA24 /* attrget.c */; };
+		D72BA38F214765430082FA24 /* attrs.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA341214765430082FA24 /* attrs.c */; };
+		D72BA390214765430082FA24 /* buffio.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA343214765430082FA24 /* buffio.c */; };
+		D72BA391214765430082FA24 /* charsets.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA344214765430082FA24 /* charsets.c */; };
+		D72BA392214765430082FA24 /* clean.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA346214765430082FA24 /* clean.c */; };
+		D72BA393214765430082FA24 /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA348214765430082FA24 /* config.c */; };
+		D72BA394214765430082FA24 /* entities.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA34A214765430082FA24 /* entities.c */; };
+		D72BA395214765430082FA24 /* fileio.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA34C214765430082FA24 /* fileio.c */; };
+		D72BA396214765430082FA24 /* iconvtc.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA34F214765430082FA24 /* iconvtc.c */; };
+		D72BA397214765430082FA24 /* istack.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA351214765430082FA24 /* istack.c */; };
+		D72BA398214765430082FA24 /* lexer.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA352214765430082FA24 /* lexer.c */; };
+		D72BA399214765430082FA24 /* localize.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA354214765430082FA24 /* localize.c */; };
+		D72BA39A214765430082FA24 /* mappedio.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA355214765430082FA24 /* mappedio.c */; };
+		D72BA39B214765430082FA24 /* parser.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA358214765430082FA24 /* parser.c */; };
+		D72BA39C214765430082FA24 /* pprint.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA35A214765430082FA24 /* pprint.c */; };
+		D72BA39D214765430082FA24 /* streamio.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA35C214765430082FA24 /* streamio.c */; };
+		D72BA39E214765430082FA24 /* tagask.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA35E214765430082FA24 /* tagask.c */; };
+		D72BA39F214765430082FA24 /* tags.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA35F214765430082FA24 /* tags.c */; };
+		D72BA3A0214765430082FA24 /* tidylib.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA362214765430082FA24 /* tidylib.c */; };
+		D72BA3A1214765430082FA24 /* tmbstr.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA363214765430082FA24 /* tmbstr.c */; };
+		D72BA3A2214765430082FA24 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA365214765430082FA24 /* utf8.c */; };
+		D72BA3A3214765430082FA24 /* win32tc.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA368214765430082FA24 /* win32tc.c */; };
+		D72BA3A4214765430082FA24 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72BA36D214765430082FA24 /* GHUnitIOS.framework */; };
+		D72BA3A5214765430082FA24 /* license-gdata.txt in Resources */ = {isa = PBXBuildFile; fileRef = D72BA36E214765430082FA24 /* license-gdata.txt */; };
+		D72BA3A6214765430082FA24 /* license-tidy.txt in Resources */ = {isa = PBXBuildFile; fileRef = D72BA36F214765430082FA24 /* license-tidy.txt */; };
+		D72BA3A7214765430082FA24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D72BA370214765430082FA24 /* README.md */; };
+		D72BA3A8214765430082FA24 /* update.sh in Resources */ = {isa = PBXBuildFile; fileRef = D72BA372214765430082FA24 /* update.sh */; };
+		D72BA3A9214765430082FA24 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA376214765430082FA24 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D72BA3AA214765430082FA24 /* HtmlTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = D72BA379214765430082FA24 /* HtmlTidy.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D72BA3B6214767AE0082FA24 /* buffio.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA335214765430082FA24 /* buffio.h */; };
+		D72BA3B7214767AE0082FA24 /* platform.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA336214765430082FA24 /* platform.h */; };
+		D72BA3B8214767AE0082FA24 /* tidy.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA337214765430082FA24 /* tidy.h */; };
+		D72BA3B9214767AE0082FA24 /* tidyenum.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA338214765430082FA24 /* tidyenum.h */; };
+		D72BA3BA214767B50082FA24 /* access.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA33B214765430082FA24 /* access.h */; };
+		D72BA3BB214767B50082FA24 /* attrdict.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA33F214765430082FA24 /* attrdict.h */; };
+		D72BA3BC214767B50082FA24 /* attrs.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA342214765430082FA24 /* attrs.h */; };
+		D72BA3BD214767B50082FA24 /* charsets.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA345214765430082FA24 /* charsets.h */; };
+		D72BA3BE214767B50082FA24 /* clean.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA347214765430082FA24 /* clean.h */; };
+		D72BA3BF214767B50082FA24 /* config.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA349214765430082FA24 /* config.h */; };
+		D72BA3C0214767B50082FA24 /* entities.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA34B214765430082FA24 /* entities.h */; };
+		D72BA3C1214767B50082FA24 /* fileio.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA34D214765430082FA24 /* fileio.h */; };
+		D72BA3C2214767B50082FA24 /* forward.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA34E214765430082FA24 /* forward.h */; };
+		D72BA3C3214767B50082FA24 /* iconvtc.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA350214765430082FA24 /* iconvtc.h */; };
+		D72BA3C4214767B50082FA24 /* lexer.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA353214765430082FA24 /* lexer.h */; };
+		D72BA3C5214767B50082FA24 /* mappedio.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA356214765430082FA24 /* mappedio.h */; };
+		D72BA3C6214767B50082FA24 /* message.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA357214765430082FA24 /* message.h */; };
+		D72BA3C7214767B50082FA24 /* parser.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA359214765430082FA24 /* parser.h */; };
+		D72BA3C8214767B50082FA24 /* pprint.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA35B214765430082FA24 /* pprint.h */; };
+		D72BA3C9214767B50082FA24 /* streamio.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA35D214765430082FA24 /* streamio.h */; };
+		D72BA3CA214767B50082FA24 /* tags.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA360214765430082FA24 /* tags.h */; };
+		D72BA3CB214767B50082FA24 /* tidy-int.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA361214765430082FA24 /* tidy-int.h */; };
+		D72BA3CC214767B50082FA24 /* tmbstr.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA364214765430082FA24 /* tmbstr.h */; };
+		D72BA3CD214767B50082FA24 /* utf8.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA366214765430082FA24 /* utf8.h */; };
+		D72BA3CE214767B50082FA24 /* version.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA367214765430082FA24 /* version.h */; };
+		D72BA3CF214767B50082FA24 /* win32tc.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA369214765430082FA24 /* win32tc.h */; };
+		D72BA3D0214767BF0082FA24 /* GDataXMLNode.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA375214765430082FA24 /* GDataXMLNode.h */; };
+		D72BA3D1214767BF0082FA24 /* GDataXML-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = D72BA377214765430082FA24 /* GDataXML-Prefix.pch */; };
+		D72BA3D2214767BF0082FA24 /* HtmlTidy.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA378214765430082FA24 /* HtmlTidy.h */; };
+		D72BA3D3214767CB0082FA24 /* aes.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA284214665470082FA24 /* aes.h */; };
+		D72BA3D4214767CB0082FA24 /* aes_ni.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA286214665470082FA24 /* aes_ni.h */; };
+		D72BA3D5214767CB0082FA24 /* aesopt.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA289214665470082FA24 /* aesopt.h */; };
+		D72BA3D6214767CB0082FA24 /* aestab.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA28B214665470082FA24 /* aestab.h */; };
+		D72BA3D7214767CB0082FA24 /* brg_endian.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA28C214665470082FA24 /* brg_endian.h */; };
+		D72BA3D8214767CB0082FA24 /* brg_types.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA28D214665470082FA24 /* brg_types.h */; };
+		D72BA3D9214767CB0082FA24 /* fileenc.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA28F214665470082FA24 /* fileenc.h */; };
+		D72BA3DA214767CB0082FA24 /* hmac.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA291214665470082FA24 /* hmac.h */; };
+		D72BA3DB214767CB0082FA24 /* prng.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA293214665470082FA24 /* prng.h */; };
+		D72BA3DC214767CB0082FA24 /* pwd2key.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA295214665470082FA24 /* pwd2key.h */; };
+		D72BA3DD214767CB0082FA24 /* sha1.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA297214665470082FA24 /* sha1.h */; };
+		D72BA3DE214767CB0082FA24 /* crypt.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA299214665470082FA24 /* crypt.h */; };
+		D72BA3DF214767CB0082FA24 /* ioapi.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA29B214665470082FA24 /* ioapi.h */; };
+		D72BA3E0214767CB0082FA24 /* ioapi_buf.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA29D214665470082FA24 /* ioapi_buf.h */; };
+		D72BA3E1214767CB0082FA24 /* ioapi_mem.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA29F214665470082FA24 /* ioapi_mem.h */; };
+		D72BA3E2214767CB0082FA24 /* minishared.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A1214665470082FA24 /* minishared.h */; };
+		D72BA3E3214767CB0082FA24 /* unzip.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A3214665470082FA24 /* unzip.h */; };
+		D72BA3E4214767CB0082FA24 /* zip.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A5214665470082FA24 /* zip.h */; };
+		D72BA3E5214767CB0082FA24 /* SSZipArchive.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A6214665470082FA24 /* SSZipArchive.h */; };
+		D72BA3E6214767CB0082FA24 /* SSZipCommon.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A8214665470082FA24 /* SSZipCommon.h */; };
+		D72BA3E7214767CB0082FA24 /* ZipArchive.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA2A9214665470082FA24 /* ZipArchive.h */; };
+		D72BA3E8214767D30082FA24 /* brdb.c.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26421464F600082FA24 /* brdb.c.h */; };
+		D72BA3E9214767D30082FA24 /* brdb.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26521464F600082FA24 /* brdb.h */; };
+		D72BA3EA214767D30082FA24 /* ole.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26621464F600082FA24 /* ole.h */; };
+		D72BA3EB214767D30082FA24 /* xls.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26721464F600082FA24 /* xls.h */; };
+		D72BA3EC214767D30082FA24 /* xlsstruct.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26821464F600082FA24 /* xlsstruct.h */; };
+		D72BA3ED214767D30082FA24 /* xlstool.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26921464F600082FA24 /* xlstool.h */; };
+		D72BA3EE214767D30082FA24 /* xlstypes.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26A21464F600082FA24 /* xlstypes.h */; };
+		D72BA3EF214767D80082FA24 /* DHXlsconfig.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA25721464F600082FA24 /* DHXlsconfig.h */; };
+		D72BA3F0214767E00082FA24 /* ExcelTool.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA27B214655AA0082FA24 /* ExcelTool.h */; };
+		D72BA3F1214767E00082FA24 /* XlsReader.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA25B21464F600082FA24 /* XlsReader.h */; };
+		D72BA3F2214767E00082FA24 /* DHcell-Private.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA25D21464F600082FA24 /* DHcell-Private.h */; };
+		D72BA3F3214767E00082FA24 /* DHcell.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA25E21464F600082FA24 /* DHcell.h */; };
+		D72BA3F4214767E00082FA24 /* DHxlsReaderIOS-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26021464F600082FA24 /* DHxlsReaderIOS-Prefix.pch */; };
+		D72BA3F5214767E00082FA24 /* DHxlsReaderIOS.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26121464F600082FA24 /* DHxlsReaderIOS.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +172,27 @@
 			proxyType = 1;
 			remoteGlobalIDString = D7269E9E213B579B0091F571;
 			remoteInfo = GQ4LocalizedString;
+		};
+		D72BA386214765430082FA24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D72BA36A214765430082FA24 /* GDataXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A8D4E211382DA88006504B9;
+			remoteInfo = GDataXML;
+		};
+		D72BA388214765430082FA24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D72BA36A214765430082FA24 /* GDataXML.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8A8D4EB7138312F1006504B9;
+			remoteInfo = Tests;
+		};
+		D72BA3B0214765580082FA24 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D72BA36A214765430082FA24 /* GDataXML.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A8D4E201382DA88006504B9;
+			remoteInfo = GDataXML;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -73,6 +223,138 @@
 		D72B9FE5213FB4730082FA24 /* GQMainModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQMainModel.m; sourceTree = "<group>"; };
 		D72B9FE8213FB8250082FA24 /* HSAlertShowTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HSAlertShowTool.h; sourceTree = "<group>"; };
 		D72B9FE9213FB8250082FA24 /* HSAlertShowTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HSAlertShowTool.m; sourceTree = "<group>"; };
+		D72BA06E21425BFB0082FA24 /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		D72BA07021425C7B0082FA24 /* libiconv.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.2.dylib; path = ../../../../../usr/lib/libiconv.2.dylib; sourceTree = "<group>"; };
+		D72BA1CA214648E10082FA24 /* test.xls */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.xls; sourceTree = "<group>"; };
+		D72BA25721464F600082FA24 /* DHXlsconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHXlsconfig.h; sourceTree = "<group>"; };
+		D72BA25921464F600082FA24 /* main11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main11.cpp; sourceTree = "<group>"; };
+		D72BA25A21464F600082FA24 /* XlsReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = XlsReader.cpp; sourceTree = "<group>"; };
+		D72BA25B21464F600082FA24 /* XlsReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XlsReader.h; sourceTree = "<group>"; };
+		D72BA25D21464F600082FA24 /* DHcell-Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHcell-Private.h"; sourceTree = "<group>"; };
+		D72BA25E21464F600082FA24 /* DHcell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHcell.h; sourceTree = "<group>"; };
+		D72BA25F21464F600082FA24 /* DHcell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHcell.m; sourceTree = "<group>"; };
+		D72BA26021464F600082FA24 /* DHxlsReaderIOS-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DHxlsReaderIOS-Prefix.pch"; sourceTree = "<group>"; };
+		D72BA26121464F600082FA24 /* DHxlsReaderIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DHxlsReaderIOS.h; sourceTree = "<group>"; };
+		D72BA26221464F600082FA24 /* DHxlsReaderIOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DHxlsReaderIOS.m; sourceTree = "<group>"; };
+		D72BA26421464F600082FA24 /* brdb.c.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.c.h; sourceTree = "<group>"; };
+		D72BA26521464F600082FA24 /* brdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brdb.h; sourceTree = "<group>"; };
+		D72BA26621464F600082FA24 /* ole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ole.h; sourceTree = "<group>"; };
+		D72BA26721464F600082FA24 /* xls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xls.h; sourceTree = "<group>"; };
+		D72BA26821464F600082FA24 /* xlsstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlsstruct.h; sourceTree = "<group>"; };
+		D72BA26921464F600082FA24 /* xlstool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstool.h; sourceTree = "<group>"; };
+		D72BA26A21464F600082FA24 /* xlstypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = xlstypes.h; sourceTree = "<group>"; };
+		D72BA26C21464F600082FA24 /* getopt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getopt.c; sourceTree = "<group>"; };
+		D72BA26D21464F600082FA24 /* ole.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ole.c; sourceTree = "<group>"; };
+		D72BA26E21464F600082FA24 /* xls.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls.c; sourceTree = "<group>"; };
+		D72BA26F21464F600082FA24 /* xls2csv.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xls2csv.c; sourceTree = "<group>"; };
+		D72BA27021464F600082FA24 /* xlstool.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = xlstool.c; sourceTree = "<group>"; };
+		D72BA27B214655AA0082FA24 /* ExcelTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExcelTool.h; sourceTree = "<group>"; };
+		D72BA27C214655AA0082FA24 /* ExcelTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExcelTool.m; sourceTree = "<group>"; };
+		D72BA27E214657610082FA24 /* libz.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.dylib; path = ../../../../../usr/lib/libz.1.dylib; sourceTree = "<group>"; };
+		D72BA281214665470082FA24 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D72BA284214665470082FA24 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		D72BA285214665470082FA24 /* aes_ni.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aes_ni.c; sourceTree = "<group>"; };
+		D72BA286214665470082FA24 /* aes_ni.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_ni.h; sourceTree = "<group>"; };
+		D72BA287214665470082FA24 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		D72BA288214665470082FA24 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		D72BA289214665470082FA24 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		D72BA28A214665470082FA24 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		D72BA28B214665470082FA24 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		D72BA28C214665470082FA24 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		D72BA28D214665470082FA24 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		D72BA28E214665470082FA24 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		D72BA28F214665470082FA24 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		D72BA290214665470082FA24 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		D72BA291214665470082FA24 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		D72BA292214665470082FA24 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		D72BA293214665470082FA24 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		D72BA294214665470082FA24 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		D72BA295214665470082FA24 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		D72BA296214665470082FA24 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		D72BA297214665470082FA24 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		D72BA298214665470082FA24 /* crypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypt.c; sourceTree = "<group>"; };
+		D72BA299214665470082FA24 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		D72BA29A214665470082FA24 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		D72BA29B214665470082FA24 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		D72BA29C214665470082FA24 /* ioapi_buf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_buf.c; sourceTree = "<group>"; };
+		D72BA29D214665470082FA24 /* ioapi_buf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_buf.h; sourceTree = "<group>"; };
+		D72BA29E214665470082FA24 /* ioapi_mem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi_mem.c; sourceTree = "<group>"; };
+		D72BA29F214665470082FA24 /* ioapi_mem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi_mem.h; sourceTree = "<group>"; };
+		D72BA2A0214665470082FA24 /* minishared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = minishared.c; sourceTree = "<group>"; };
+		D72BA2A1214665470082FA24 /* minishared.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = minishared.h; sourceTree = "<group>"; };
+		D72BA2A2214665470082FA24 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		D72BA2A3214665470082FA24 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		D72BA2A4214665470082FA24 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		D72BA2A5214665470082FA24 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		D72BA2A6214665470082FA24 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		D72BA2A7214665470082FA24 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		D72BA2A8214665470082FA24 /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		D72BA2A9214665470082FA24 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		D72BA2C4214762760082FA24 /* libxml2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.tbd; path = usr/lib/libxml2.tbd; sourceTree = SDKROOT; };
+		D72BA2C6214762A70082FA24 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = ../../../../../usr/lib/libxml2.2.dylib; sourceTree = "<group>"; };
+		D72BA335214765430082FA24 /* buffio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffio.h; sourceTree = "<group>"; };
+		D72BA336214765430082FA24 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = platform.h; sourceTree = "<group>"; };
+		D72BA337214765430082FA24 /* tidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tidy.h; sourceTree = "<group>"; };
+		D72BA338214765430082FA24 /* tidyenum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tidyenum.h; sourceTree = "<group>"; };
+		D72BA33A214765430082FA24 /* access.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = access.c; sourceTree = "<group>"; };
+		D72BA33B214765430082FA24 /* access.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = access.h; sourceTree = "<group>"; };
+		D72BA33C214765430082FA24 /* alloc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = alloc.c; sourceTree = "<group>"; };
+		D72BA33D214765430082FA24 /* attrask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrask.c; sourceTree = "<group>"; };
+		D72BA33E214765430082FA24 /* attrdict.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrdict.c; sourceTree = "<group>"; };
+		D72BA33F214765430082FA24 /* attrdict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attrdict.h; sourceTree = "<group>"; };
+		D72BA340214765430082FA24 /* attrget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrget.c; sourceTree = "<group>"; };
+		D72BA341214765430082FA24 /* attrs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = attrs.c; sourceTree = "<group>"; };
+		D72BA342214765430082FA24 /* attrs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = attrs.h; sourceTree = "<group>"; };
+		D72BA343214765430082FA24 /* buffio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffio.c; sourceTree = "<group>"; };
+		D72BA344214765430082FA24 /* charsets.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = charsets.c; sourceTree = "<group>"; };
+		D72BA345214765430082FA24 /* charsets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = charsets.h; sourceTree = "<group>"; };
+		D72BA346214765430082FA24 /* clean.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = clean.c; sourceTree = "<group>"; };
+		D72BA347214765430082FA24 /* clean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = clean.h; sourceTree = "<group>"; };
+		D72BA348214765430082FA24 /* config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = config.c; sourceTree = "<group>"; };
+		D72BA349214765430082FA24 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		D72BA34A214765430082FA24 /* entities.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entities.c; sourceTree = "<group>"; };
+		D72BA34B214765430082FA24 /* entities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entities.h; sourceTree = "<group>"; };
+		D72BA34C214765430082FA24 /* fileio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileio.c; sourceTree = "<group>"; };
+		D72BA34D214765430082FA24 /* fileio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileio.h; sourceTree = "<group>"; };
+		D72BA34E214765430082FA24 /* forward.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = forward.h; sourceTree = "<group>"; };
+		D72BA34F214765430082FA24 /* iconvtc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = iconvtc.c; sourceTree = "<group>"; };
+		D72BA350214765430082FA24 /* iconvtc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iconvtc.h; sourceTree = "<group>"; };
+		D72BA351214765430082FA24 /* istack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = istack.c; sourceTree = "<group>"; };
+		D72BA352214765430082FA24 /* lexer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lexer.c; sourceTree = "<group>"; };
+		D72BA353214765430082FA24 /* lexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lexer.h; sourceTree = "<group>"; };
+		D72BA354214765430082FA24 /* localize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = localize.c; sourceTree = "<group>"; };
+		D72BA355214765430082FA24 /* mappedio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mappedio.c; sourceTree = "<group>"; };
+		D72BA356214765430082FA24 /* mappedio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mappedio.h; sourceTree = "<group>"; };
+		D72BA357214765430082FA24 /* message.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = message.h; sourceTree = "<group>"; };
+		D72BA358214765430082FA24 /* parser.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser.c; sourceTree = "<group>"; };
+		D72BA359214765430082FA24 /* parser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parser.h; sourceTree = "<group>"; };
+		D72BA35A214765430082FA24 /* pprint.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pprint.c; sourceTree = "<group>"; };
+		D72BA35B214765430082FA24 /* pprint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pprint.h; sourceTree = "<group>"; };
+		D72BA35C214765430082FA24 /* streamio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = streamio.c; sourceTree = "<group>"; };
+		D72BA35D214765430082FA24 /* streamio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streamio.h; sourceTree = "<group>"; };
+		D72BA35E214765430082FA24 /* tagask.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tagask.c; sourceTree = "<group>"; };
+		D72BA35F214765430082FA24 /* tags.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tags.c; sourceTree = "<group>"; };
+		D72BA360214765430082FA24 /* tags.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tags.h; sourceTree = "<group>"; };
+		D72BA361214765430082FA24 /* tidy-int.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "tidy-int.h"; sourceTree = "<group>"; };
+		D72BA362214765430082FA24 /* tidylib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tidylib.c; sourceTree = "<group>"; };
+		D72BA363214765430082FA24 /* tmbstr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tmbstr.c; sourceTree = "<group>"; };
+		D72BA364214765430082FA24 /* tmbstr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tmbstr.h; sourceTree = "<group>"; };
+		D72BA365214765430082FA24 /* utf8.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utf8.c; sourceTree = "<group>"; };
+		D72BA366214765430082FA24 /* utf8.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = utf8.h; sourceTree = "<group>"; };
+		D72BA367214765430082FA24 /* version.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		D72BA368214765430082FA24 /* win32tc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = win32tc.c; sourceTree = "<group>"; };
+		D72BA369214765430082FA24 /* win32tc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = win32tc.h; sourceTree = "<group>"; };
+		D72BA36A214765430082FA24 /* GDataXML.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = GDataXML.xcodeproj; sourceTree = "<group>"; };
+		D72BA36D214765430082FA24 /* GHUnitIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GHUnitIOS.framework; sourceTree = "<group>"; };
+		D72BA36E214765430082FA24 /* license-gdata.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "license-gdata.txt"; sourceTree = "<group>"; };
+		D72BA36F214765430082FA24 /* license-tidy.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "license-tidy.txt"; sourceTree = "<group>"; };
+		D72BA370214765430082FA24 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D72BA372214765430082FA24 /* update.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = update.sh; sourceTree = "<group>"; };
+		D72BA375214765430082FA24 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		D72BA376214765430082FA24 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		D72BA377214765430082FA24 /* GDataXML-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDataXML-Prefix.pch"; sourceTree = "<group>"; };
+		D72BA378214765430082FA24 /* HtmlTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlTidy.h; sourceTree = "<group>"; };
+		D72BA379214765430082FA24 /* HtmlTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlTidy.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +362,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72BA2C7214762A70082FA24 /* libxml2.2.dylib in Frameworks */,
+				D72BA3A4214765430082FA24 /* GHUnitIOS.framework in Frameworks */,
+				D72BA27F214657610082FA24 /* libz.1.dylib in Frameworks */,
+				D72BA07121425C7B0082FA24 /* libiconv.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +393,7 @@
 				D7269EB8213B579C0091F571 /* GQ4LocalizedStringTests */,
 				D7269EC3213B579C0091F571 /* GQ4LocalizedStringUITests */,
 				D7269EA0213B579B0091F571 /* Products */,
+				D72BA06D21425BFA0082FA24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,12 +410,14 @@
 		D7269EA1213B579B0091F571 /* GQ4LocalizedString */ = {
 			isa = PBXGroup;
 			children = (
+				D72BA1CA214648E10082FA24 /* test.xls */,
 				D7269EA2213B579B0091F571 /* AppDelegate.h */,
 				D7269EA3213B579B0091F571 /* AppDelegate.m */,
 				D72B9FE7213FB8250082FA24 /* Tools */,
 				D72B9FD8213FB4060082FA24 /* Main */,
 				D7269ED2213B5B400091F571 /* Result */,
 				D7269EA8213B579B0091F571 /* Assets.xcassets */,
+				D72BA07221426BCB0082FA24 /* Lib */,
 				D7269EAA213B579B0091F571 /* Main.storyboard */,
 				D7269EAD213B579B0091F571 /* Info.plist */,
 				D7269EAE213B579B0091F571 /* main.m */,
@@ -236,6 +525,296 @@
 			path = Tools;
 			sourceTree = "<group>";
 		};
+		D72BA06D21425BFA0082FA24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA2C6214762A70082FA24 /* libxml2.2.dylib */,
+				D72BA2C4214762760082FA24 /* libxml2.tbd */,
+				D72BA27E214657610082FA24 /* libz.1.dylib */,
+				D72BA07021425C7B0082FA24 /* libiconv.2.dylib */,
+				D72BA06E21425BFB0082FA24 /* libiconv.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D72BA07221426BCB0082FA24 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA331214765430082FA24 /* GDataXML */,
+				D72BA280214665470082FA24 /* SSZipArchive */,
+				D72BA27A214655AA0082FA24 /* Tool */,
+				D72BA25621464F600082FA24 /* DHxlsReader */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D72BA25621464F600082FA24 /* DHxlsReader */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA25721464F600082FA24 /* DHXlsconfig.h */,
+				D72BA25821464F600082FA24 /* cplusplus */,
+				D72BA25C21464F600082FA24 /* DHxlsReaderIOS */,
+				D72BA26321464F600082FA24 /* libxls */,
+				D72BA26B21464F600082FA24 /* src */,
+			);
+			path = DHxlsReader;
+			sourceTree = "<group>";
+		};
+		D72BA25821464F600082FA24 /* cplusplus */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA25921464F600082FA24 /* main11.cpp */,
+				D72BA25A21464F600082FA24 /* XlsReader.cpp */,
+				D72BA25B21464F600082FA24 /* XlsReader.h */,
+			);
+			path = cplusplus;
+			sourceTree = "<group>";
+		};
+		D72BA25C21464F600082FA24 /* DHxlsReaderIOS */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA25D21464F600082FA24 /* DHcell-Private.h */,
+				D72BA25E21464F600082FA24 /* DHcell.h */,
+				D72BA25F21464F600082FA24 /* DHcell.m */,
+				D72BA26021464F600082FA24 /* DHxlsReaderIOS-Prefix.pch */,
+				D72BA26121464F600082FA24 /* DHxlsReaderIOS.h */,
+				D72BA26221464F600082FA24 /* DHxlsReaderIOS.m */,
+			);
+			path = DHxlsReaderIOS;
+			sourceTree = "<group>";
+		};
+		D72BA26321464F600082FA24 /* libxls */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA26421464F600082FA24 /* brdb.c.h */,
+				D72BA26521464F600082FA24 /* brdb.h */,
+				D72BA26621464F600082FA24 /* ole.h */,
+				D72BA26721464F600082FA24 /* xls.h */,
+				D72BA26821464F600082FA24 /* xlsstruct.h */,
+				D72BA26921464F600082FA24 /* xlstool.h */,
+				D72BA26A21464F600082FA24 /* xlstypes.h */,
+			);
+			path = libxls;
+			sourceTree = "<group>";
+		};
+		D72BA26B21464F600082FA24 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA26C21464F600082FA24 /* getopt.c */,
+				D72BA26D21464F600082FA24 /* ole.c */,
+				D72BA26E21464F600082FA24 /* xls.c */,
+				D72BA26F21464F600082FA24 /* xls2csv.c */,
+				D72BA27021464F600082FA24 /* xlstool.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D72BA27A214655AA0082FA24 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA27B214655AA0082FA24 /* ExcelTool.h */,
+				D72BA27C214655AA0082FA24 /* ExcelTool.m */,
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		D72BA280214665470082FA24 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA281214665470082FA24 /* Info.plist */,
+				D72BA282214665470082FA24 /* minizip */,
+				D72BA2A6214665470082FA24 /* SSZipArchive.h */,
+				D72BA2A7214665470082FA24 /* SSZipArchive.m */,
+				D72BA2A8214665470082FA24 /* SSZipCommon.h */,
+				D72BA2A9214665470082FA24 /* ZipArchive.h */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		D72BA282214665470082FA24 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA283214665470082FA24 /* aes */,
+				D72BA298214665470082FA24 /* crypt.c */,
+				D72BA299214665470082FA24 /* crypt.h */,
+				D72BA29A214665470082FA24 /* ioapi.c */,
+				D72BA29B214665470082FA24 /* ioapi.h */,
+				D72BA29C214665470082FA24 /* ioapi_buf.c */,
+				D72BA29D214665470082FA24 /* ioapi_buf.h */,
+				D72BA29E214665470082FA24 /* ioapi_mem.c */,
+				D72BA29F214665470082FA24 /* ioapi_mem.h */,
+				D72BA2A0214665470082FA24 /* minishared.c */,
+				D72BA2A1214665470082FA24 /* minishared.h */,
+				D72BA2A2214665470082FA24 /* unzip.c */,
+				D72BA2A3214665470082FA24 /* unzip.h */,
+				D72BA2A4214665470082FA24 /* zip.c */,
+				D72BA2A5214665470082FA24 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		D72BA283214665470082FA24 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA284214665470082FA24 /* aes.h */,
+				D72BA285214665470082FA24 /* aes_ni.c */,
+				D72BA286214665470082FA24 /* aes_ni.h */,
+				D72BA287214665470082FA24 /* aescrypt.c */,
+				D72BA288214665470082FA24 /* aeskey.c */,
+				D72BA289214665470082FA24 /* aesopt.h */,
+				D72BA28A214665470082FA24 /* aestab.c */,
+				D72BA28B214665470082FA24 /* aestab.h */,
+				D72BA28C214665470082FA24 /* brg_endian.h */,
+				D72BA28D214665470082FA24 /* brg_types.h */,
+				D72BA28E214665470082FA24 /* fileenc.c */,
+				D72BA28F214665470082FA24 /* fileenc.h */,
+				D72BA290214665470082FA24 /* hmac.c */,
+				D72BA291214665470082FA24 /* hmac.h */,
+				D72BA292214665470082FA24 /* prng.c */,
+				D72BA293214665470082FA24 /* prng.h */,
+				D72BA294214665470082FA24 /* pwd2key.c */,
+				D72BA295214665470082FA24 /* pwd2key.h */,
+				D72BA296214665470082FA24 /* sha1.c */,
+				D72BA297214665470082FA24 /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		D72BA331214765430082FA24 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA332214765430082FA24 /* Externals */,
+				D72BA36A214765430082FA24 /* GDataXML.xcodeproj */,
+				D72BA36D214765430082FA24 /* GHUnitIOS.framework */,
+				D72BA36E214765430082FA24 /* license-gdata.txt */,
+				D72BA36F214765430082FA24 /* license-tidy.txt */,
+				D72BA370214765430082FA24 /* README.md */,
+				D72BA371214765430082FA24 /* scripts */,
+				D72BA373214765430082FA24 /* Sources */,
+			);
+			path = GDataXML;
+			sourceTree = "<group>";
+		};
+		D72BA332214765430082FA24 /* Externals */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA333214765430082FA24 /* Tidy */,
+			);
+			path = Externals;
+			sourceTree = "<group>";
+		};
+		D72BA333214765430082FA24 /* Tidy */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA334214765430082FA24 /* include */,
+				D72BA339214765430082FA24 /* src */,
+			);
+			path = Tidy;
+			sourceTree = "<group>";
+		};
+		D72BA334214765430082FA24 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA335214765430082FA24 /* buffio.h */,
+				D72BA336214765430082FA24 /* platform.h */,
+				D72BA337214765430082FA24 /* tidy.h */,
+				D72BA338214765430082FA24 /* tidyenum.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		D72BA339214765430082FA24 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA33A214765430082FA24 /* access.c */,
+				D72BA33B214765430082FA24 /* access.h */,
+				D72BA33C214765430082FA24 /* alloc.c */,
+				D72BA33D214765430082FA24 /* attrask.c */,
+				D72BA33E214765430082FA24 /* attrdict.c */,
+				D72BA33F214765430082FA24 /* attrdict.h */,
+				D72BA340214765430082FA24 /* attrget.c */,
+				D72BA341214765430082FA24 /* attrs.c */,
+				D72BA342214765430082FA24 /* attrs.h */,
+				D72BA343214765430082FA24 /* buffio.c */,
+				D72BA344214765430082FA24 /* charsets.c */,
+				D72BA345214765430082FA24 /* charsets.h */,
+				D72BA346214765430082FA24 /* clean.c */,
+				D72BA347214765430082FA24 /* clean.h */,
+				D72BA348214765430082FA24 /* config.c */,
+				D72BA349214765430082FA24 /* config.h */,
+				D72BA34A214765430082FA24 /* entities.c */,
+				D72BA34B214765430082FA24 /* entities.h */,
+				D72BA34C214765430082FA24 /* fileio.c */,
+				D72BA34D214765430082FA24 /* fileio.h */,
+				D72BA34E214765430082FA24 /* forward.h */,
+				D72BA34F214765430082FA24 /* iconvtc.c */,
+				D72BA350214765430082FA24 /* iconvtc.h */,
+				D72BA351214765430082FA24 /* istack.c */,
+				D72BA352214765430082FA24 /* lexer.c */,
+				D72BA353214765430082FA24 /* lexer.h */,
+				D72BA354214765430082FA24 /* localize.c */,
+				D72BA355214765430082FA24 /* mappedio.c */,
+				D72BA356214765430082FA24 /* mappedio.h */,
+				D72BA357214765430082FA24 /* message.h */,
+				D72BA358214765430082FA24 /* parser.c */,
+				D72BA359214765430082FA24 /* parser.h */,
+				D72BA35A214765430082FA24 /* pprint.c */,
+				D72BA35B214765430082FA24 /* pprint.h */,
+				D72BA35C214765430082FA24 /* streamio.c */,
+				D72BA35D214765430082FA24 /* streamio.h */,
+				D72BA35E214765430082FA24 /* tagask.c */,
+				D72BA35F214765430082FA24 /* tags.c */,
+				D72BA360214765430082FA24 /* tags.h */,
+				D72BA361214765430082FA24 /* tidy-int.h */,
+				D72BA362214765430082FA24 /* tidylib.c */,
+				D72BA363214765430082FA24 /* tmbstr.c */,
+				D72BA364214765430082FA24 /* tmbstr.h */,
+				D72BA365214765430082FA24 /* utf8.c */,
+				D72BA366214765430082FA24 /* utf8.h */,
+				D72BA367214765430082FA24 /* version.h */,
+				D72BA368214765430082FA24 /* win32tc.c */,
+				D72BA369214765430082FA24 /* win32tc.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		D72BA36B214765430082FA24 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA387214765430082FA24 /* libGDataXML.a */,
+				D72BA389214765430082FA24 /* Tests.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D72BA371214765430082FA24 /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA372214765430082FA24 /* update.sh */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
+		D72BA373214765430082FA24 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA374214765430082FA24 /* GDataXML */,
+				D72BA377214765430082FA24 /* GDataXML-Prefix.pch */,
+				D72BA378214765430082FA24 /* HtmlTidy.h */,
+				D72BA379214765430082FA24 /* HtmlTidy.m */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		D72BA374214765430082FA24 /* GDataXML */ = {
+			isa = PBXGroup;
+			children = (
+				D72BA375214765430082FA24 /* GDataXMLNode.h */,
+				D72BA376214765430082FA24 /* GDataXMLNode.m */,
+			);
+			path = GDataXML;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -250,6 +829,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				D72BA3B1214765580082FA24 /* PBXTargetDependency */,
 			);
 			name = GQ4LocalizedString;
 			productName = GQ4LocalizedString;
@@ -325,6 +905,12 @@
 			mainGroup = D7269E96213B579B0091F571;
 			productRefGroup = D7269EA0213B579B0091F571 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D72BA36B214765430082FA24 /* Products */;
+					ProjectRef = D72BA36A214765430082FA24 /* GDataXML.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D7269E9E213B579B0091F571 /* GQ4LocalizedString */,
@@ -334,14 +920,37 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		D72BA387214765430082FA24 /* libGDataXML.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGDataXML.a;
+			remoteRef = D72BA386214765430082FA24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D72BA389214765430082FA24 /* Tests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = Tests.app;
+			remoteRef = D72BA388214765430082FA24 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		D7269E9D213B579B0091F571 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72BA3A6214765430082FA24 /* license-tidy.txt in Resources */,
 				D7269EE0213B5BA50091F571 /* GQResultWindowController.xib in Resources */,
 				D7269EA9213B579B0091F571 /* Assets.xcassets in Resources */,
+				D72BA2AA214665470082FA24 /* Info.plist in Resources */,
 				D7269EDB213B5B5B0091F571 /* GQResultViewController.xib in Resources */,
+				D72BA1CB214648E20082FA24 /* test.xls in Resources */,
+				D72BA3A7214765430082FA24 /* README.md in Resources */,
+				D72BA3A8214765430082FA24 /* update.sh in Resources */,
+				D72BA3A5214765430082FA24 /* license-gdata.txt in Resources */,
 				D7269EAC213B579B0091F571 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -367,20 +976,139 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D72BA3F0214767E00082FA24 /* ExcelTool.h in Sources */,
+				D72BA3F1214767E00082FA24 /* XlsReader.h in Sources */,
+				D72BA3F2214767E00082FA24 /* DHcell-Private.h in Sources */,
+				D72BA3F3214767E00082FA24 /* DHcell.h in Sources */,
+				D72BA3F4214767E00082FA24 /* DHxlsReaderIOS-Prefix.pch in Sources */,
+				D72BA3F5214767E00082FA24 /* DHxlsReaderIOS.h in Sources */,
+				D72BA3EF214767D80082FA24 /* DHXlsconfig.h in Sources */,
+				D72BA3E8214767D30082FA24 /* brdb.c.h in Sources */,
+				D72BA3E9214767D30082FA24 /* brdb.h in Sources */,
+				D72BA3EA214767D30082FA24 /* ole.h in Sources */,
+				D72BA3EB214767D30082FA24 /* xls.h in Sources */,
+				D72BA3EC214767D30082FA24 /* xlsstruct.h in Sources */,
+				D72BA3ED214767D30082FA24 /* xlstool.h in Sources */,
+				D72BA3EE214767D30082FA24 /* xlstypes.h in Sources */,
+				D72BA3D3214767CB0082FA24 /* aes.h in Sources */,
+				D72BA3D4214767CB0082FA24 /* aes_ni.h in Sources */,
+				D72BA3D5214767CB0082FA24 /* aesopt.h in Sources */,
+				D72BA3D6214767CB0082FA24 /* aestab.h in Sources */,
+				D72BA3D7214767CB0082FA24 /* brg_endian.h in Sources */,
+				D72BA3D8214767CB0082FA24 /* brg_types.h in Sources */,
+				D72BA3D9214767CB0082FA24 /* fileenc.h in Sources */,
+				D72BA3DA214767CB0082FA24 /* hmac.h in Sources */,
+				D72BA3DB214767CB0082FA24 /* prng.h in Sources */,
+				D72BA3DC214767CB0082FA24 /* pwd2key.h in Sources */,
+				D72BA3DD214767CB0082FA24 /* sha1.h in Sources */,
+				D72BA3DE214767CB0082FA24 /* crypt.h in Sources */,
+				D72BA3DF214767CB0082FA24 /* ioapi.h in Sources */,
+				D72BA3E0214767CB0082FA24 /* ioapi_buf.h in Sources */,
+				D72BA3E1214767CB0082FA24 /* ioapi_mem.h in Sources */,
+				D72BA3E2214767CB0082FA24 /* minishared.h in Sources */,
+				D72BA3E3214767CB0082FA24 /* unzip.h in Sources */,
+				D72BA3E4214767CB0082FA24 /* zip.h in Sources */,
+				D72BA3E5214767CB0082FA24 /* SSZipArchive.h in Sources */,
+				D72BA3E6214767CB0082FA24 /* SSZipCommon.h in Sources */,
+				D72BA3E7214767CB0082FA24 /* ZipArchive.h in Sources */,
+				D72BA3D0214767BF0082FA24 /* GDataXMLNode.h in Sources */,
+				D72BA3D1214767BF0082FA24 /* GDataXML-Prefix.pch in Sources */,
+				D72BA3D2214767BF0082FA24 /* HtmlTidy.h in Sources */,
+				D72BA3BA214767B50082FA24 /* access.h in Sources */,
+				D72BA3BB214767B50082FA24 /* attrdict.h in Sources */,
+				D72BA3BC214767B50082FA24 /* attrs.h in Sources */,
+				D72BA3BD214767B50082FA24 /* charsets.h in Sources */,
+				D72BA3BE214767B50082FA24 /* clean.h in Sources */,
+				D72BA3BF214767B50082FA24 /* config.h in Sources */,
+				D72BA3C0214767B50082FA24 /* entities.h in Sources */,
+				D72BA3C1214767B50082FA24 /* fileio.h in Sources */,
+				D72BA3C2214767B50082FA24 /* forward.h in Sources */,
+				D72BA3C3214767B50082FA24 /* iconvtc.h in Sources */,
+				D72BA3C4214767B50082FA24 /* lexer.h in Sources */,
+				D72BA3C5214767B50082FA24 /* mappedio.h in Sources */,
+				D72BA3C6214767B50082FA24 /* message.h in Sources */,
+				D72BA3C7214767B50082FA24 /* parser.h in Sources */,
+				D72BA3C8214767B50082FA24 /* pprint.h in Sources */,
+				D72BA3C9214767B50082FA24 /* streamio.h in Sources */,
+				D72BA3CA214767B50082FA24 /* tags.h in Sources */,
+				D72BA3CB214767B50082FA24 /* tidy-int.h in Sources */,
+				D72BA3CC214767B50082FA24 /* tmbstr.h in Sources */,
+				D72BA3CD214767B50082FA24 /* utf8.h in Sources */,
+				D72BA3CE214767B50082FA24 /* version.h in Sources */,
+				D72BA3CF214767B50082FA24 /* win32tc.h in Sources */,
+				D72BA3B6214767AE0082FA24 /* buffio.h in Sources */,
+				D72BA3B7214767AE0082FA24 /* platform.h in Sources */,
+				D72BA3B8214767AE0082FA24 /* tidy.h in Sources */,
+				D72BA3B9214767AE0082FA24 /* tidyenum.h in Sources */,
+				D72BA39E214765430082FA24 /* tagask.c in Sources */,
+				D72BA38B214765430082FA24 /* alloc.c in Sources */,
+				D72BA2B7214665470082FA24 /* ioapi_mem.c in Sources */,
+				D72BA2B2214665470082FA24 /* pwd2key.c in Sources */,
+				D72BA2B0214665470082FA24 /* hmac.c in Sources */,
 				D72B9FEC213FB83D0082FA24 /* GQMainModel.h in Sources */,
+				D72BA392214765430082FA24 /* clean.c in Sources */,
+				D72BA391214765430082FA24 /* charsets.c in Sources */,
+				D72BA39F214765430082FA24 /* tags.c in Sources */,
+				D72BA38F214765430082FA24 /* attrs.c in Sources */,
+				D72BA398214765430082FA24 /* lexer.c in Sources */,
+				D72BA3A0214765430082FA24 /* tidylib.c in Sources */,
+				D72BA27521464F600082FA24 /* getopt.c in Sources */,
+				D72BA2B4214665470082FA24 /* crypt.c in Sources */,
+				D72BA2AC214665470082FA24 /* aescrypt.c in Sources */,
 				D72B9FE6213FB4730082FA24 /* GQMainModel.m in Sources */,
+				D72BA39B214765430082FA24 /* parser.c in Sources */,
+				D72BA394214765430082FA24 /* entities.c in Sources */,
+				D72BA2B3214665470082FA24 /* sha1.c in Sources */,
 				D72B9FEB213FB8340082FA24 /* HSAlertShowTool.h in Sources */,
 				D72B9FEA213FB8250082FA24 /* HSAlertShowTool.m in Sources */,
+				D72BA395214765430082FA24 /* fileio.c in Sources */,
+				D72BA39D214765430082FA24 /* streamio.c in Sources */,
 				D72B9FE0213FB42B0082FA24 /* GQResultWindowController.h in Sources */,
 				D7269EDF213B5BA50091F571 /* GQResultWindowController.m in Sources */,
+				D72BA399214765430082FA24 /* localize.c in Sources */,
+				D72BA27121464F600082FA24 /* main11.cpp in Sources */,
+				D72BA2AE214665470082FA24 /* aestab.c in Sources */,
 				D72B9FE1213FB42B0082FA24 /* GQResultWindowController.xib in Sources */,
+				D72BA3A3214765430082FA24 /* win32tc.c in Sources */,
+				D72BA27921464F600082FA24 /* xlstool.c in Sources */,
+				D72BA38D214765430082FA24 /* attrdict.c in Sources */,
+				D72BA390214765430082FA24 /* buffio.c in Sources */,
+				D72BA27421464F600082FA24 /* DHxlsReaderIOS.m in Sources */,
+				D72BA27621464F600082FA24 /* ole.c in Sources */,
+				D72BA2B1214665470082FA24 /* prng.c in Sources */,
+				D72BA27221464F600082FA24 /* XlsReader.cpp in Sources */,
+				D72BA27D214655AA0082FA24 /* ExcelTool.m in Sources */,
+				D72BA397214765430082FA24 /* istack.c in Sources */,
+				D72BA3A1214765430082FA24 /* tmbstr.c in Sources */,
+				D72BA2AF214665470082FA24 /* fileenc.c in Sources */,
 				D72B9FE2213FB42B0082FA24 /* GQResultViewController.h in Sources */,
+				D72BA2AB214665470082FA24 /* aes_ni.c in Sources */,
+				D72BA3A2214765430082FA24 /* utf8.c in Sources */,
+				D72BA393214765430082FA24 /* config.c in Sources */,
+				D72BA3A9214765430082FA24 /* GDataXMLNode.m in Sources */,
+				D72BA39C214765430082FA24 /* pprint.c in Sources */,
 				D7269EDA213B5B5B0091F571 /* GQResultViewController.m in Sources */,
+				D72BA39A214765430082FA24 /* mappedio.c in Sources */,
 				D72B9FE3213FB42B0082FA24 /* GQResultViewController.xib in Sources */,
+				D72BA38C214765430082FA24 /* attrask.c in Sources */,
+				D72BA2B8214665470082FA24 /* minishared.c in Sources */,
+				D72BA27721464F600082FA24 /* xls.c in Sources */,
+				D72BA38A214765430082FA24 /* access.c in Sources */,
+				D72BA27321464F600082FA24 /* DHcell.m in Sources */,
+				D72BA2B9214665470082FA24 /* unzip.c in Sources */,
 				D72B9FDF213FB41C0082FA24 /* GQMainViewController.h in Sources */,
 				D72B9FDE213FB4060082FA24 /* GQMainViewController.m in Sources */,
+				D72BA396214765430082FA24 /* iconvtc.c in Sources */,
+				D72BA2BB214665470082FA24 /* SSZipArchive.m in Sources */,
+				D72BA2BA214665470082FA24 /* zip.c in Sources */,
+				D72BA2B6214665470082FA24 /* ioapi_buf.c in Sources */,
 				D7269EAF213B579B0091F571 /* main.m in Sources */,
+				D72BA3AA214765430082FA24 /* HtmlTidy.m in Sources */,
+				D72BA2AD214665470082FA24 /* aeskey.c in Sources */,
 				D7269EA4213B579B0091F571 /* AppDelegate.m in Sources */,
+				D72BA27821464F600082FA24 /* xls2csv.c in Sources */,
+				D72BA2B5214665470082FA24 /* ioapi.c in Sources */,
+				D72BA38E214765430082FA24 /* attrget.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +1140,11 @@
 			isa = PBXTargetDependency;
 			target = D7269E9E213B579B0091F571 /* GQ4LocalizedString */;
 			targetProxy = D7269EC1213B579C0091F571 /* PBXContainerItemProxy */;
+		};
+		D72BA3B1214765580082FA24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GDataXML;
+			targetProxy = D72BA3B0214765580082FA24 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -543,6 +1276,11 @@
 				CODE_SIGN_ENTITLEMENTS = GQ4LocalizedString/GQ4LocalizedString.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GQ4LocalizedString/Lib/GDataXML",
+				);
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = GQ4LocalizedString/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -560,6 +1298,11 @@
 				CODE_SIGN_ENTITLEMENTS = GQ4LocalizedString/GQ4LocalizedString.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GQ4LocalizedString/Lib/GDataXML",
+				);
+				HEADER_SEARCH_PATHS = "${SDKROOT}/usr/include/libxml2";
 				INFOPLIST_FILE = GQ4LocalizedString/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

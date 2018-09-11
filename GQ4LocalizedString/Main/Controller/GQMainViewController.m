@@ -71,14 +71,11 @@
     }
     
     // 处理excel文件
+    NSURL *url = self.selectFileList[0];
+
+    NSString *excelString = [self.model dataStringFromXlsxExcel:[url path]];
     
-    NSError *error = nil;
-    NSData *fileData = [NSData dataWithContentsOfURL:self.selectFileList[0] options:NSDataReadingMappedIfSafe error:&error];
-    
-    NSString *fileDataString = [fileData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
-    
-    NSLog(@"file data string:%@", fileDataString);
-    
+    NSLog(@"result:%@", excelString);
 }
 
 // excel检测占位符

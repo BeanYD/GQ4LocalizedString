@@ -74,8 +74,7 @@
     NSURL *url = self.selectFileList[0];
 
     NSString *excelString = [self.model dataStringFromXlsxExcel:[url path]];
-    
-    NSLog(@"result:%@", excelString);
+
 }
 
 // excel检测占位符

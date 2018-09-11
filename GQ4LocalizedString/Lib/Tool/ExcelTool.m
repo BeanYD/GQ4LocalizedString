@@ -21,56 +21,19 @@
     DHxlsReader *reader = [DHxlsReader xlsReaderFromFile:filePath];
     assert(reader);
     
-#if 0
     [reader startIterator:0];
     
+    NSString *text = @"";    
     while(YES) {
         DHcell *cell = [reader nextCell];
         if(cell.type == cellBlank) break;
         
         text = [text stringByAppendingFormat:@"\n%@\n", [cell dump]];
         NSLog(@"%@", text);
+        
     }
     
-#else
-    
-    int col = 1;
-  
-    while (YES) {
-        DHcell *cell = [reader cellInWorkSheetIndex:0 row:1 col:col];
-        if(col > 10) break;
-        NSString *name = [cell dump];
-
-        col++;
-    }
-    if (self.nameCol == 0 || self.phoneCol == 0) {
-        NSLog(@"读取xls完成");
-        return nil;
-    }
-    int row = 2;
-    NSMutableArray *tempArray = [[NSMutableArray alloc] init];
-    while(YES) {
-        DHcell *cell = [reader cellInWorkSheetIndex:0 row:row col:self.nameCol];
-        if(cell.type == cellBlank) break;
-        DHcell *cell1 = [reader cellInWorkSheetIndex:0 row:row col:self.phoneCol];
-        //        NSLog(@"\nCell:%@\nCell1:%@\n", [cell dump], [cell1 dump]);
-        NSLog(@"%@%@", [cell dump], [cell1 dump]);
-        row++;
-        if ([cell1 dump].length == 0) {
-            continue;
-        }
-        NSDictionary *contact = @{@"AgentNo":[[NSUserDefaults standardUserDefaults] objectForKey:@"用户"],@"Name":[cell dump],@"Phone":[cell1 dump]};
-        [tempArray addObject:contact];
-       
-    }
-   
-#endif
-    NSData* jsonData =[NSJSONSerialization dataWithJSONObject:tempArray
-                                                      options:NSJSONWritingPrettyPrinted error:nil];
-    NSString *strs=[[NSString alloc] initWithData:jsonData
-                                         encoding:NSUTF8StringEncoding];
-    
-    return strs;
+    return text;
 }
 
 
@@ -130,15 +93,8 @@
         NSString *str = [contact attributeForName:@"r"].stringValue;
         if ([str isEqualToString:@"1"]) {
             GDataXMLDocument *cDoc = [[GDataXMLDocument alloc] initWithRootElement:contact];
-            NSArray *cArrays = [cDoc.rootElement elementsForName:@"c" ];
-          
-            for (GDataXMLElement *clo in cArrays) {
-                NSString *str = [clo attributeForName:@"r"].stringValue;
-                NSString *typeStr = [clo attributeForName:@"t"].stringValue;
-                GDataXMLElement *pidElement = [[clo elementsForName:@"v"] objectAtIndex:0];
-                NSInteger index = pidElement.stringValue.intValue;
-                
-            }
+            NSArray *cArrays = [cDoc.rootElement elementsForName:@"c"];
+
             continue;
         }
         
@@ -146,30 +102,7 @@
         GDataXMLDocument *cDoc = [[GDataXMLDocument alloc] initWithRootElement:contact];
         NSArray *cArrays = [cDoc.rootElement elementsForName:@"c" ];
         NSLog(@"%@",cArrays);
-        for (GDataXMLElement *clo in cArrays) {
-            NSString *str = [clo attributeForName:@"r"].stringValue;
-            NSString *typeStr = [clo attributeForName:@"t"].stringValue;
-            
-            if ([str containsString:self.nameNum]) {
-                GDataXMLElement *pidElement = [[clo elementsForName:@"v"] objectAtIndex:0];
-                NSInteger index = pidElement.stringValue.intValue;
-                if ([typeStr isEqualToString:@"s"]) {
-                    name = tempArray[index];
-                }else{
-                    name = pidElement.stringValue;
-                }
-            }
-            
-            if ([str containsString:self.phoneNum]) {
-                GDataXMLElement *pidElement = [[clo elementsForName:@"v"] objectAtIndex:0];
-                NSInteger index = pidElement.stringValue.intValue;
-                if ([typeStr isEqualToString:@"s"]) {
-                    number = tempArray[index];
-                }else{
-                    number = pidElement.stringValue;
-                }
-            }
-        }
+        
         if (number == nil) {
             continue;
         }

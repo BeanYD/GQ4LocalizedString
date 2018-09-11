@@ -7,6 +7,10 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="GQResultViewController">
             <connections>
+                <outlet property="allChangeButton" destination="Uyz-Tv-m8p" id="0Pu-fd-V1j"/>
+                <outlet property="allSelectButton" destination="4M7-tt-JPA" id="FAU-O7-x5P"/>
+                <outlet property="selectChangeButton" destination="yOx-cC-2qr" id="06k-q4-WIA"/>
+                <outlet property="tableView" destination="Jg8-eg-F5M" id="2VE-4g-naj"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -16,6 +20,36 @@
             <rect key="frame" x="0.0" y="0.0" width="587" height="406"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uyz-Tv-m8p">
+                    <rect key="frame" x="-6" y="378" width="94" height="32"/>
+                    <buttonCell key="cell" type="push" title="全部替换" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5Mg-dX-beP">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="allChangeButtonClick:" target="-2" id="f9K-M2-eAB"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yOx-cC-2qr">
+                    <rect key="frame" x="76" y="378" width="94" height="32"/>
+                    <buttonCell key="cell" type="push" title="选中替换" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PkH-ca-qmx">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="selectChangeButtonClick:" target="-2" id="mbd-Zy-gje"/>
+                    </connections>
+                </button>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="4M7-tt-JPA">
+                    <rect key="frame" x="526" y="378" width="67" height="32"/>
+                    <buttonCell key="cell" type="push" title="全选" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="VSU-Xh-KGq">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" size="13" name=".PingFangSC-Regular"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="allSelectButtonClick:" target="-2" id="JLa-Rn-j0E"/>
+                    </connections>
+                </button>
                 <scrollView autohidesScrollers="YES" horizontalLineScroll="20" horizontalPageScroll="10" verticalLineScroll="20" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg8-eg-F5M">
                     <rect key="frame" x="0.0" y="0.0" width="587" height="386"/>
                     <clipView key="contentView" id="zlV-rD-Btm">
@@ -102,24 +136,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </tableHeaderView>
                 </scrollView>
-                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="yOx-cC-2qr">
-                    <rect key="frame" x="76" y="378" width="94" height="32"/>
-                    <buttonCell key="cell" type="push" title="选中替换" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="PkH-ca-qmx">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
-                    </buttonCell>
-                </button>
-                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Uyz-Tv-m8p">
-                    <rect key="frame" x="-6" y="378" width="94" height="32"/>
-                    <buttonCell key="cell" type="push" title="全部替换" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="5Mg-dX-beP">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" size="13" name=".PingFangSC-Regular"/>
-                    </buttonCell>
-                </button>
             </subviews>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="Jg8-eg-F5M" secondAttribute="bottom" id="2zP-Pt-QZo"/>
+                <constraint firstAttribute="trailing" secondItem="4M7-tt-JPA" secondAttribute="trailing" id="AH5-OE-PZg"/>
                 <constraint firstAttribute="trailing" secondItem="Jg8-eg-F5M" secondAttribute="trailing" id="BFY-10-73v"/>
+                <constraint firstItem="4M7-tt-JPA" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" id="NpV-IS-Jue"/>
                 <constraint firstItem="Uyz-Tv-m8p" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" id="W5g-2F-I39"/>
                 <constraint firstItem="yOx-cC-2qr" firstAttribute="leading" secondItem="Uyz-Tv-m8p" secondAttribute="trailing" id="k3q-Su-rGd"/>
                 <constraint firstItem="Jg8-eg-F5M" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="20" id="ovt-2C-bdH"/>

@@ -3,13 +3,26 @@
    version = "1.0">
    <ContextStates>
       <ContextState
-         contextName = "-[ExcelTool readExcel_XlsX_WithPath:]:ExcelTool.m">
+         contextName = "-[GQMainModel dealWithSpaceWithPath:]:GQMainModel.m">
          <PersistentStrings>
             <PersistentString
                value = "strEles">
             </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[ExcelTool readExcel_XlsX_WithPath:]:ExcelTool.m">
+         <PersistentStrings>
             <PersistentString
                value = "tempArray">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "delete_space:GQMainModel.m">
+         <PersistentStrings>
+            <PersistentString
+               value = "strlen(sp)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

@@ -26,6 +26,8 @@
     // Do any additional setup after loading the view.
     
     self.model = [[GQMainModel alloc] init];
+    
+//    [self.model textCFunction];
 }
 
 // 浏览按钮
@@ -73,7 +75,7 @@
     // 处理excel文件
     NSURL *url = self.selectFileList[0];
 
-    NSString *excelString = [self.model dataStringFromXlsxExcel:[url path]];
+    [self.model dealWithSpaceWithPath:[url path]];
 
 }
 

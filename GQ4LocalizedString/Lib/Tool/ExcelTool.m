@@ -107,7 +107,7 @@
             continue;
         }
         NSDictionary *contact = @{@"AgentNo":[[NSUserDefaults standardUserDefaults] objectForKey:@"用户"],@"Name":name,@"Phone":number};
-                [dictTemp addObject:contact];
+        [dictTemp addObject:contact];
     }
     
     NSLog(@"%@",dictTemp);

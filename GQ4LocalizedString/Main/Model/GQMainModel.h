@@ -16,9 +16,13 @@
 // 获取.strings文件
 - (NSMutableArray *)stringsFileListFromSource:(NSArray *)sourceList;
 
+// 处理excel文件中的空格
+- (void)dealWithSpaceWithPath:(NSString *)path;
 
 - (NSString *)dataStringFromXlsExcel:(NSString *)path;
 
 - (NSString *)dataStringFromXlsxExcel:(NSString *)path;
+
+- (void)textCFunction;
 
 @end

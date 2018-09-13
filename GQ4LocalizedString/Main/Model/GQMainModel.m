@@ -74,32 +74,71 @@
     NSString *shareStr = [xlStr stringByAppendingPathComponent:@"sharedStrings.xml"];
     NSData *data = [[NSData alloc] initWithContentsOfFile:shareStr];
     GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data options:kNilOptions error:nil];
-        
+    
+    if (!doc) return;
+    
     // strEles所有网格的字符
     NSArray *strEles = [doc.rootElement elementsForName:@"si"];
+    
+    NSLog(@"old strEles:%@", strEles);
 
-    for (GDataXMLNode *xmlNode in strEles) {
+    for (GDataXMLElement *xmlElem in strEles) {
         
 //        NSLog(@"xmlNode Xml String:%@", xmlNode.XMLString);
         
-        NSArray *xmlChildren = xmlNode.children;
+        NSArray *xmlChildren = xmlElem.children;
         
         for (GDataXMLElement *elem in xmlChildren) {
-            
 
+            // 保护
             if (!elem.XMLNode->children) {
                 continue;
             }
             
-            xmlChar *pcText = elem.XMLNode->children->content;
-            // 去除头尾空格操作.ASCII码值，0-255之间，unsigned char *和char *可直接强转
-            pcText = (unsigned char *)delete_space((char *)pcText);
+//            xmlChar *pcText = elem.XMLNode->children->content;
+//            // 去除头尾空格操作.ASCII码值，0-255之间，unsigned char *和char *可直接强转
+//            pcText = (unsigned char *)delete_space((char *)pcText);
+//            
+//            NSLog(@"content str:%s", pcText);
+//                        
+//            NSLog(@"xml string:%@\n", elem.XMLString);
             
-            NSLog(@"content str:%s", pcText);
-
+            NSString *xmlString = elem.XMLString;
+                  
+            // 临时办法解析xmlString : <t>device_type</t>，解析后数组3个元素
+            NSArray *xmlSubs = [xmlString componentsSeparatedByString:@"<"];
+            
+            if (xmlSubs.count < 3) {
+                // 非xml字段，直接进行下一个
+                continue;
+            }
+            
+            NSArray *subSec = [xmlSubs[1] componentsSeparatedByString:@">"];
+            
+            if (subSec.count < 2) {
+                // 非xml字段，直接进行下一个
+                continue;
+            }
+            
+            NSArray *subThi = [xmlSubs[2] componentsSeparatedByString:@">"];
+            if (subThi.count < 1) {
+                // 非xml字段，直接进行下一个
+                continue;
+            }
+            
+            NSString *headerString = subSec[0];
+            NSString *textString = subSec[1];
+            NSString *endString = subThi[0];
+            
+            textString = [textString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+            
+            NSString *newXmlString = [NSString stringWithFormat:@"<%@>%@<%@>", headerString, textString, endString];
         }
-            
     }
+    
+    
+    NSLog(@"new strEles:%@", [newRootElem elementsForName:@"si"]);
+
     
     
 //    NSLog(@"网格所有字符%@\n", strEles);

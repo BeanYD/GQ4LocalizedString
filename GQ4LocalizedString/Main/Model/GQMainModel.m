@@ -84,7 +84,7 @@
 
     for (GDataXMLElement *xmlElem in strEles) {
         
-//        NSLog(@"xmlNode Xml String:%@", xmlNode.XMLString);
+        NSLog(@"xmlNode Xml String:%@", xmlElem.XMLString);
         
         NSArray *xmlChildren = xmlElem.children;
         
@@ -135,10 +135,6 @@
             NSString *newXmlString = [NSString stringWithFormat:@"<%@>%@<%@>", headerString, textString, endString];
         }
     }
-    
-    
-    NSLog(@"new strEles:%@", [newRootElem elementsForName:@"si"]);
-
     
     
 //    NSLog(@"网格所有字符%@\n", strEles);

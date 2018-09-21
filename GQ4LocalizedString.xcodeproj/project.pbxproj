@@ -14,15 +14,11 @@
 		D7269EBA213B579C0091F571 /* GQ4LocalizedStringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EB9213B579C0091F571 /* GQ4LocalizedStringTests.m */; };
 		D7269EC5213B579C0091F571 /* GQ4LocalizedStringUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EC4213B579C0091F571 /* GQ4LocalizedStringUITests.m */; };
 		D7269EDA213B5B5B0091F571 /* GQResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269ED8213B5B5B0091F571 /* GQResultViewController.m */; };
-		D7269EDB213B5B5B0091F571 /* GQResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7269ED9213B5B5B0091F571 /* GQResultViewController.xib */; };
 		D7269EDF213B5BA50091F571 /* GQResultWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = D7269EDD213B5BA50091F571 /* GQResultWindowController.m */; };
-		D7269EE0213B5BA50091F571 /* GQResultWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */; };
 		D72B9FDE213FB4060082FA24 /* GQMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FDB213FB4060082FA24 /* GQMainViewController.m */; };
 		D72B9FDF213FB41C0082FA24 /* GQMainViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FDA213FB4060082FA24 /* GQMainViewController.h */; };
 		D72B9FE0213FB42B0082FA24 /* GQResultWindowController.h in Sources */ = {isa = PBXBuildFile; fileRef = D7269EDC213B5BA50091F571 /* GQResultWindowController.h */; };
-		D72B9FE1213FB42B0082FA24 /* GQResultWindowController.xib in Sources */ = {isa = PBXBuildFile; fileRef = D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */; };
 		D72B9FE2213FB42B0082FA24 /* GQResultViewController.h in Sources */ = {isa = PBXBuildFile; fileRef = D7269ED7213B5B5B0091F571 /* GQResultViewController.h */; };
-		D72B9FE3213FB42B0082FA24 /* GQResultViewController.xib in Sources */ = {isa = PBXBuildFile; fileRef = D7269ED9213B5B5B0091F571 /* GQResultViewController.xib */; };
 		D72B9FE6213FB4730082FA24 /* GQMainModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE5213FB4730082FA24 /* GQMainModel.m */; };
 		D72B9FEA213FB8250082FA24 /* HSAlertShowTool.m in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE9213FB8250082FA24 /* HSAlertShowTool.m */; };
 		D72B9FEB213FB8340082FA24 /* HSAlertShowTool.h in Sources */ = {isa = PBXBuildFile; fileRef = D72B9FE8213FB8250082FA24 /* HSAlertShowTool.h */; };
@@ -156,6 +152,9 @@
 		D72BA3F3214767E00082FA24 /* DHcell.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA25E21464F600082FA24 /* DHcell.h */; };
 		D72BA3F4214767E00082FA24 /* DHxlsReaderIOS-Prefix.pch in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26021464F600082FA24 /* DHxlsReaderIOS-Prefix.pch */; };
 		D72BA3F5214767E00082FA24 /* DHxlsReaderIOS.h in Sources */ = {isa = PBXBuildFile; fileRef = D72BA26121464F600082FA24 /* DHxlsReaderIOS.h */; };
+		D7BF7C78215381B000ABFD67 /* GQResultWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7BF7C76215381B000ABFD67 /* GQResultWindowController.xib */; };
+		D7BF7C79215381B000ABFD67 /* GQResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7BF7C77215381B000ABFD67 /* GQResultViewController.xib */; };
+		D7EA360D214FD083002B4AA1 /* GQXlsxSiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EA360C214FD083002B4AA1 /* GQXlsxSiModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,10 +212,8 @@
 		D7269EC6213B579C0091F571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D7269ED7213B5B5B0091F571 /* GQResultViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQResultViewController.h; sourceTree = "<group>"; };
 		D7269ED8213B5B5B0091F571 /* GQResultViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQResultViewController.m; sourceTree = "<group>"; };
-		D7269ED9213B5B5B0091F571 /* GQResultViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GQResultViewController.xib; sourceTree = "<group>"; };
 		D7269EDC213B5BA50091F571 /* GQResultWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQResultWindowController.h; sourceTree = "<group>"; };
 		D7269EDD213B5BA50091F571 /* GQResultWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQResultWindowController.m; sourceTree = "<group>"; };
-		D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GQResultWindowController.xib; sourceTree = "<group>"; };
 		D72B9FDA213FB4060082FA24 /* GQMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GQMainViewController.h; sourceTree = "<group>"; };
 		D72B9FDB213FB4060082FA24 /* GQMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GQMainViewController.m; sourceTree = "<group>"; };
 		D72B9FE4213FB4730082FA24 /* GQMainModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQMainModel.h; sourceTree = "<group>"; };
@@ -355,6 +352,10 @@
 		D72BA377214765430082FA24 /* GDataXML-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GDataXML-Prefix.pch"; sourceTree = "<group>"; };
 		D72BA378214765430082FA24 /* HtmlTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HtmlTidy.h; sourceTree = "<group>"; };
 		D72BA379214765430082FA24 /* HtmlTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HtmlTidy.m; sourceTree = "<group>"; };
+		D7BF7C76215381B000ABFD67 /* GQResultWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GQResultWindowController.xib; sourceTree = "<group>"; };
+		D7BF7C77215381B000ABFD67 /* GQResultViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GQResultViewController.xib; sourceTree = "<group>"; };
+		D7EA360B214FD083002B4AA1 /* GQXlsxSiModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GQXlsxSiModel.h; sourceTree = "<group>"; };
+		D7EA360C214FD083002B4AA1 /* GQXlsxSiModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GQXlsxSiModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -459,10 +460,10 @@
 			children = (
 				D7269EDC213B5BA50091F571 /* GQResultWindowController.h */,
 				D7269EDD213B5BA50091F571 /* GQResultWindowController.m */,
-				D7269EDE213B5BA50091F571 /* GQResultWindowController.xib */,
+				D7BF7C76215381B000ABFD67 /* GQResultWindowController.xib */,
 				D7269ED7213B5B5B0091F571 /* GQResultViewController.h */,
 				D7269ED8213B5B5B0091F571 /* GQResultViewController.m */,
-				D7269ED9213B5B5B0091F571 /* GQResultViewController.xib */,
+				D7BF7C77215381B000ABFD67 /* GQResultViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -505,6 +506,8 @@
 			children = (
 				D72B9FE4213FB4730082FA24 /* GQMainModel.h */,
 				D72B9FE5213FB4730082FA24 /* GQMainModel.m */,
+				D7EA360B214FD083002B4AA1 /* GQXlsxSiModel.h */,
+				D7EA360C214FD083002B4AA1 /* GQXlsxSiModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -943,13 +946,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72BA3A6214765430082FA24 /* license-tidy.txt in Resources */,
-				D7269EE0213B5BA50091F571 /* GQResultWindowController.xib in Resources */,
+				D7BF7C79215381B000ABFD67 /* GQResultViewController.xib in Resources */,
 				D7269EA9213B579B0091F571 /* Assets.xcassets in Resources */,
 				D72BA2AA214665470082FA24 /* Info.plist in Resources */,
-				D7269EDB213B5B5B0091F571 /* GQResultViewController.xib in Resources */,
 				D72BA1CB214648E20082FA24 /* test.xls in Resources */,
 				D72BA3A7214765430082FA24 /* README.md in Resources */,
 				D72BA3A8214765430082FA24 /* update.sh in Resources */,
+				D7BF7C78215381B000ABFD67 /* GQResultWindowController.xib in Resources */,
 				D72BA3A5214765430082FA24 /* license-gdata.txt in Resources */,
 				D7269EAC213B579B0091F571 /* Main.storyboard in Resources */,
 			);
@@ -984,6 +987,7 @@
 				D72BA3F5214767E00082FA24 /* DHxlsReaderIOS.h in Sources */,
 				D72BA3EF214767D80082FA24 /* DHXlsconfig.h in Sources */,
 				D72BA3E8214767D30082FA24 /* brdb.c.h in Sources */,
+				D7EA360D214FD083002B4AA1 /* GQXlsxSiModel.m in Sources */,
 				D72BA3E9214767D30082FA24 /* brdb.h in Sources */,
 				D72BA3EA214767D30082FA24 /* ole.h in Sources */,
 				D72BA3EB214767D30082FA24 /* xls.h in Sources */,
@@ -1068,7 +1072,6 @@
 				D72BA399214765430082FA24 /* localize.c in Sources */,
 				D72BA27121464F600082FA24 /* main11.cpp in Sources */,
 				D72BA2AE214665470082FA24 /* aestab.c in Sources */,
-				D72B9FE1213FB42B0082FA24 /* GQResultWindowController.xib in Sources */,
 				D72BA3A3214765430082FA24 /* win32tc.c in Sources */,
 				D72BA27921464F600082FA24 /* xlstool.c in Sources */,
 				D72BA38D214765430082FA24 /* attrdict.c in Sources */,
@@ -1089,7 +1092,6 @@
 				D72BA39C214765430082FA24 /* pprint.c in Sources */,
 				D7269EDA213B5B5B0091F571 /* GQResultViewController.m in Sources */,
 				D72BA39A214765430082FA24 /* mappedio.c in Sources */,
-				D72B9FE3213FB42B0082FA24 /* GQResultViewController.xib in Sources */,
 				D72BA38C214765430082FA24 /* attrask.c in Sources */,
 				D72BA2B8214665470082FA24 /* minishared.c in Sources */,
 				D72BA27721464F600082FA24 /* xls.c in Sources */,

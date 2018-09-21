@@ -13,6 +13,7 @@
 #import "ZipArchive.h"
 
 #import "GDataXMLNode.h"
+#import "GQXlsxSiModel.h"
 
 @interface GQMainModel ()
 
@@ -72,6 +73,7 @@
     //字符池
     NSString *xlStr = [unZipPath stringByAppendingPathComponent:@"xl"];
     NSString *shareStr = [xlStr stringByAppendingPathComponent:@"sharedStrings.xml"];
+    NSLog(@"Unzip xml data path:%@", shareStr);
     NSData *data = [[NSData alloc] initWithContentsOfFile:shareStr];
     GDataXMLDocument *doc = [[GDataXMLDocument alloc] initWithData:data options:kNilOptions error:nil];
     
@@ -80,96 +82,70 @@
     // strEles所有网格的字符
     NSArray *strEles = [doc.rootElement elementsForName:@"si"];
     
-    NSLog(@"old strEles:%@", strEles);
-
-    for (GDataXMLElement *xmlElem in strEles) {
+    NSLog(@"uri:%@\nprefix:%@\nname:%@\nlocalName:%@", doc.rootElement.URI, doc.rootElement.prefix, doc.rootElement.name, doc.rootElement.localName);
+    
+    // 新的字符数组
+    NSMutableArray *newSiEles = [NSMutableArray array];
+    
+    for (GDataXMLElement *member in strEles) {
         
-        NSLog(@"xmlNode Xml String:%@", xmlElem.XMLString);
+        NSString *textString;
         
-        NSArray *xmlChildren = xmlElem.children;
+        // text
+        NSArray *texts = [member elementsForName:@"t"];
         
-        for (GDataXMLElement *elem in xmlChildren) {
-
-            // 保护
-            if (!elem.XMLNode->children) {
-                continue;
-            }
+        if (texts.count) {
+            GDataXMLElement *textElem = (GDataXMLElement *)[texts objectAtIndex:0];
+//            textString = [textElem.stringValue stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            textString = textElem.stringValue;
             
-//            xmlChar *pcText = elem.XMLNode->children->content;
-//            // 去除头尾空格操作.ASCII码值，0-255之间，unsigned char *和char *可直接强转
-//            pcText = (unsigned char *)delete_space((char *)pcText);
-//            
-//            NSLog(@"content str:%s", pcText);
-//                        
-//            NSLog(@"xml string:%@\n", elem.XMLString);
-            
-            NSString *xmlString = elem.XMLString;
-                  
-            // 临时办法解析xmlString : <t>device_type</t>，解析后数组3个元素
-            NSArray *xmlSubs = [xmlString componentsSeparatedByString:@"<"];
-            
-            if (xmlSubs.count < 3) {
-                // 非xml字段，直接进行下一个
-                continue;
-            }
-            
-            NSArray *subSec = [xmlSubs[1] componentsSeparatedByString:@">"];
-            
-            if (subSec.count < 2) {
-                // 非xml字段，直接进行下一个
-                continue;
-            }
-            
-            NSArray *subThi = [xmlSubs[2] componentsSeparatedByString:@">"];
-            if (subThi.count < 1) {
-                // 非xml字段，直接进行下一个
-                continue;
-            }
-            
-            NSString *headerString = subSec[0];
-            NSString *textString = subSec[1];
-            NSString *endString = subThi[0];
-            
-            textString = [textString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
-            
-            NSString *newXmlString = [NSString stringWithFormat:@"<%@>%@<%@>", headerString, textString, endString];
         }
+        
+        NSLog(@"texts:%@, text:%@", texts, textString);
+        
+        // 处理前后空格的问题
+        textString = [textString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
+        
+        [newSiEles addObject:textString];
+    }
+
+    // 创建新的xml文档——使用原表名
+    GDataXMLElement *newSiElem = [GDataXMLNode elementWithName:doc.rootElement.name];
+
+    for (NSString *text in newSiEles) {
+        
+        GDataXMLElement *excelElem = [GDataXMLNode elementWithName:@"si"];
+        GDataXMLElement *textElem = [GDataXMLNode elementWithName:@"t" stringValue:text];
+        
+        [excelElem addChild:textElem];
+        [newSiElem addChild:excelElem];
     }
     
+    GDataXMLDocument *document = [[GDataXMLDocument alloc] initWithRootElement:newSiElem];
     
-//    NSLog(@"网格所有字符%@\n", strEles);
+    NSData *xmlData = document.XMLData;
     
+    NSString *filePath = [self dataFilePath:YES];
     
+    NSLog(@"Saving xml data to %@", filePath);
 
-    NSString *workStr= [xlStr stringByAppendingPathComponent:@"worksheets"];
-    NSString *sheetStr = [workStr stringByAppendingPathComponent:@"sheet1.xml"];
-    NSData *sheetData = [[NSData alloc] initWithContentsOfFile:sheetStr];
-    GDataXMLDocument *xmldoc = [[GDataXMLDocument alloc]initWithData:sheetData options:kNilOptions error:nil];
-    
-    // sheetEles文件内的sheet数组（表格数组）
-    NSArray *sheetEles  = [xmldoc.rootElement elementsForName:@"sheetData"];
-    
-    
-    // 行数据关键字"row"
-    GDataXMLDocument *sheet1Doc = [[GDataXMLDocument alloc] initWithRootElement:sheetEles.firstObject];
-    NSArray *rowS = [sheet1Doc.rootElement elementsForName:@"row"];
-    
-    
-    
-//    NSLog(@"行数据Row:%@\n", rowS);
-    
+    [xmlData writeToFile:filePath atomically:YES];
 
-    // 获取节点属性
-    for (GDataXMLElement *contact in rowS) {
-        
-        NSString *str = [contact attributeForName:@"r"].stringValue;
-        
-//        NSLog(@"str:%@", str);
-        
-        GDataXMLDocument *cDoc = [[GDataXMLDocument alloc] initWithRootElement:contact];
-        NSArray *cArrays = [cDoc.rootElement elementsForName:@"c"];
-        
-//        NSLog(@"cArrays:%@", cArrays);
+    
+}
+
+- (NSString *)dataFilePath:(BOOL)forSave {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, 
+                                                         NSUserDomainMask, YES);
+    NSString *documentsDirectory = [paths objectAtIndex:0];
+    NSString *documentsPath = [documentsDirectory
+                               stringByAppendingPathComponent:@"sharedStrings.xml"];
+    if (forSave || 
+        [[NSFileManager defaultManager] fileExistsAtPath:documentsPath]) {
+        return documentsPath;
+    } else {
+        return [[NSBundle mainBundle] pathForResource:@"sharedStrings" ofType:@"xml"];
     }
     
 }

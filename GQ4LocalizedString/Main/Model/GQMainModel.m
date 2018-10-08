@@ -79,19 +79,27 @@
     
     if (!doc) return;
     
-    // strEles所有网格的字符
+    // 解析 doc 的 xml <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    
+    #pragma mark - 后续实现解析doc的xml <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+    
+    
+    // strEles所有网格的字符 <si><t>(text)</t><phoneticPr ...></si>
     NSArray *strEles = [doc.rootElement elementsForName:@"si"];
     
-    NSLog(@"uri:%@\nprefix:%@\nname:%@\nlocalName:%@", doc.rootElement.URI, doc.rootElement.prefix, doc.rootElement.name, doc.rootElement.localName);
+    NSLog(@"uri:%@\nprefix:%@\nname:%@\nlocalName:%@\n", doc.rootElement.URI, doc.rootElement.prefix, doc.rootElement.name, doc.rootElement.localName);
     
     // 新的字符数组
     NSMutableArray *newSiEles = [NSMutableArray array];
+    
+    // 新的字符attr数组（二维数组）——与字符数组一一对应
+    NSMutableArray *newSiAttrEles = [NSMutableArray array];
     
     for (GDataXMLElement *member in strEles) {
         
         NSString *textString;
         
-        // text
+        // 获取text from <t>(text)</t>
         NSArray *texts = [member elementsForName:@"t"];
         
         if (texts.count) {
@@ -106,56 +114,96 @@
         // 处理前后空格的问题
         textString = [textString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         
+        // text添加到数组中
         [newSiEles addObject:textString];
+        
+        // phoneticPr <phoneticPr fontId="1" type="noConversion"/> —— GDataXMLNode
+        NSArray *ticPrs = [member elementsForName:@"phoneticPr"];
+        
+        if (ticPrs.count) {
+            GDataXMLElement *prElem = (GDataXMLElement *)[ticPrs objectAtIndex:0];
+            NSLog(@"prElem name:%@, attr:%@", prElem.name, prElem.attributes);
+            
+            // 解析每个格子内的attr
+            NSArray *prAttrNodes = prElem.attributes;
+            
+            [newSiAttrEles addObject:prAttrNodes];
+        }
     }
 
     // 创建新的xml文档——使用原表名
     GDataXMLElement *newSiElem = [GDataXMLNode elementWithName:doc.rootElement.name];
-
-    for (NSString *text in newSiEles) {
+    
+    for (int i = 0; i < newSiEles.count; i++) {
+        NSString *text = newSiEles[i];
         
+        // 创建 <si>...</si>
         GDataXMLElement *excelElem = [GDataXMLNode elementWithName:@"si"];
+        
+        // 创建 <t>(text)</t>     
+        // 暂不处理 <t xml:space="preserve"> 
+        // 标志 default:无空行 preserve:有空行
         GDataXMLElement *textElem = [GDataXMLNode elementWithName:@"t" stringValue:text];
         
+        // 添加 t——>si     <si><t>(text)</t></si>
         [excelElem addChild:textElem];
+        
+        // 创建 <phoneticPr ...>
+        GDataXMLElement *docPrElem = [GDataXMLNode elementWithName:@"phoneticPr"];
+        
+        NSArray *ticPrs = newSiAttrEles[i];
+        
+        // 添加 attr 到 phoneticPr 
+        for (GDataXMLNode *ticPrAttr in ticPrs) {
+            [docPrElem addAttribute:ticPrAttr];
+        }
+        
+        // 添加 phoneticPr——>si     <si><t>(text)</t><phoneticPr ...></si>   
+        [excelElem addChild:docPrElem];
+        
+        // 将创建好的 <si>...</si> 添加到表中
         [newSiElem addChild:excelElem];
+
     }
     
     GDataXMLDocument *document = [[GDataXMLDocument alloc] initWithRootElement:newSiElem];
     
-    NSData *xmlData = document.XMLData;
+    // 设置编码格式 @"UTF-8"
+    [document setCharacterEncoding:@"UTF-8"];
     
-    NSString *filePath = [self dataFilePath:YES];
+    // 解析doc.rootElement的attr <sst xmlns="http://schemas.openxmlformats.org/spreadsheetml/2006/main" count="12" uniqueCount="12"> —— GDataXMLNode
+    NSArray *docRootElemAttrs = doc.rootElement.attributes;
+    for (GDataXMLNode *rootAttrNode in docRootElemAttrs) {
+        // 添加每条attr
+        [document.rootElement addAttribute:rootAttrNode];
+
+//        NSLog(@"rootAttrNode:%@", rootAttrNode);
+    }
+    
+    NSData *xmlData = document.XMLData;
+        
+    NSString *filePath = [self createNewXmlDataFilePath:YES];
     
     NSLog(@"Saving xml data to %@", filePath);
 
+    // 写入文件
     [xmlData writeToFile:filePath atomically:YES];
-
     
-}
-
-- (NSString *)dataFilePath:(BOOL)forSave {
+    // 生成新压缩包
     
-    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, 
-                                                         NSUserDomainMask, YES);
-    NSString *documentsDirectory = [paths objectAtIndex:0];
-    NSString *documentsPath = [documentsDirectory
-                               stringByAppendingPathComponent:@"sharedStrings.xml"];
-    if (forSave || 
-        [[NSFileManager defaultManager] fileExistsAtPath:documentsPath]) {
-        return documentsPath;
-    } else {
-        return [[NSBundle mainBundle] pathForResource:@"sharedStrings" ofType:@"xml"];
-    }
-    
+    [self zipXlsxFileFromPath:unZipPath createPath:[self createNewZipFilePathWithFileName:@"newZip.xlsx"]];
 }
 
 #pragma mark - private method
+
+// 解压 xlsx ，获取 xml 
 - (NSString *)unzipXlsxFileFromPath:(NSString *)fromPath {
     // 解压zip文件
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *docDir = [paths objectAtIndex:0];
     NSString *unZipPath = [docDir stringByAppendingPathComponent:@"Cont"];
+    
+    NSLog(@"unzip file Path:%@", unZipPath);
     
     BOOL succeed = [SSZipArchive unzipFileAtPath:fromPath toDestination:unZipPath];
     
@@ -167,6 +215,50 @@
     }
     
     return unZipPath;
+}
+
+// 将 xml 压缩生成 xlsx
+- (void)zipXlsxFileFromPath:(NSString *)fromPath createPath:(NSString *)createPath {
+    
+    BOOL succeed = [SSZipArchive createZipFileAtPath:createPath withFilesAtPaths:[NSArray arrayWithObject:fromPath]];
+    
+    if (!succeed) {
+        // 压缩失败
+        NSLog(@"压缩失败");
+        
+    }
+    
+}
+
+// 重新生成 xml 文件的路径
+- (NSString *)createNewXmlDataFilePath:(BOOL)forSave {
+    
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, 
+                                                         NSUserDomainMask, YES);
+    NSString *docDir = [paths objectAtIndex:0];
+    NSString *contPath = [docDir stringByAppendingPathComponent:@"cont"];
+    NSString *xlPath = [contPath stringByAppendingPathComponent:@"xl"];
+    NSString *xmlPath = [xlPath stringByAppendingPathComponent:@"sharedStrings.xml"];
+    
+    NSLog(@"new xml file path:%@", xmlPath);
+    
+    if (forSave || 
+        [[NSFileManager defaultManager] fileExistsAtPath:xmlPath]) {
+        return xmlPath;
+    } else {
+        return [[NSBundle mainBundle] pathForResource:@"sharedStrings" ofType:@"xml"];
+    }
+    
+}
+
+// 重新生成 zip 文件的路径
+- (NSString *)createNewZipFilePathWithFileName:(NSString *)fileName {
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDesktopDirectory, NSUserDomainMask, YES);
+    NSString *docDir = [paths objectAtIndex:0];
+    NSString *filePath = [docDir stringByAppendingPathComponent:fileName];
+    
+    NSLog(@"new zip file path:%@", filePath);
+    return filePath;
 }
 
 #pragma mark - public method

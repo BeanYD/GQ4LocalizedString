@@ -155,6 +155,7 @@
 		D7BF7C78215381B000ABFD67 /* GQResultWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7BF7C76215381B000ABFD67 /* GQResultWindowController.xib */; };
 		D7BF7C79215381B000ABFD67 /* GQResultViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D7BF7C77215381B000ABFD67 /* GQResultViewController.xib */; };
 		D7EA360D214FD083002B4AA1 /* GQXlsxSiModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EA360C214FD083002B4AA1 /* GQXlsxSiModel.m */; };
+		E5CC8963FDFEEA6F03040507 /* libPods-GQ4LocalizedString.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 65B3D112A3804002F360C1E9 /* libPods-GQ4LocalizedString.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -196,6 +197,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4180CDB52FAD0FBBF866AA23 /* Pods-GQ4LocalizedString.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GQ4LocalizedString.debug.xcconfig"; path = "Target Support Files/Pods-GQ4LocalizedString/Pods-GQ4LocalizedString.debug.xcconfig"; sourceTree = "<group>"; };
+		4DCF813F00F52AD3D4BB2D00 /* Pods-GQ4LocalizedString.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GQ4LocalizedString.release.xcconfig"; path = "Target Support Files/Pods-GQ4LocalizedString/Pods-GQ4LocalizedString.release.xcconfig"; sourceTree = "<group>"; };
+		65B3D112A3804002F360C1E9 /* libPods-GQ4LocalizedString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GQ4LocalizedString.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7269E9F213B579B0091F571 /* GQ4LocalizedString.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GQ4LocalizedString.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7269EA2213B579B0091F571 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D7269EA3213B579B0091F571 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -367,6 +371,7 @@
 				D72BA3A4214765430082FA24 /* GHUnitIOS.framework in Frameworks */,
 				D72BA27F214657610082FA24 /* libz.1.dylib in Frameworks */,
 				D72BA07121425C7B0082FA24 /* libiconv.2.dylib in Frameworks */,
+				E5CC8963FDFEEA6F03040507 /* libPods-GQ4LocalizedString.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,6 +392,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3831A105E40296B0481BB11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4180CDB52FAD0FBBF866AA23 /* Pods-GQ4LocalizedString.debug.xcconfig */,
+				4DCF813F00F52AD3D4BB2D00 /* Pods-GQ4LocalizedString.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D7269E96213B579B0091F571 = {
 			isa = PBXGroup;
 			children = (
@@ -395,6 +410,7 @@
 				D7269EC3213B579C0091F571 /* GQ4LocalizedStringUITests */,
 				D7269EA0213B579B0091F571 /* Products */,
 				D72BA06D21425BFA0082FA24 /* Frameworks */,
+				D3831A105E40296B0481BB11 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -536,6 +552,7 @@
 				D72BA27E214657610082FA24 /* libz.1.dylib */,
 				D72BA07021425C7B0082FA24 /* libiconv.2.dylib */,
 				D72BA06E21425BFB0082FA24 /* libiconv.tbd */,
+				65B3D112A3804002F360C1E9 /* libPods-GQ4LocalizedString.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -825,6 +842,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7269EC9213B579C0091F571 /* Build configuration list for PBXNativeTarget "GQ4LocalizedString" */;
 			buildPhases = (
+				68F85E9B4747FD35FC722BB2 /* [CP] Check Pods Manifest.lock */,
 				D7269E9B213B579B0091F571 /* Sources */,
 				D7269E9C213B579B0091F571 /* Frameworks */,
 				D7269E9D213B579B0091F571 /* Resources */,
@@ -973,6 +991,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		68F85E9B4747FD35FC722BB2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GQ4LocalizedString-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D7269E9B213B579B0091F571 /* Sources */ = {
@@ -1273,6 +1316,7 @@
 		};
 		D7269ECA213B579C0091F571 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4180CDB52FAD0FBBF866AA23 /* Pods-GQ4LocalizedString.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GQ4LocalizedString/GQ4LocalizedString.entitlements;
@@ -1288,6 +1332,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = persional.GQ4LocalizedString;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -1295,6 +1340,7 @@
 		};
 		D7269ECB213B579C0091F571 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DCF813F00F52AD3D4BB2D00 /* Pods-GQ4LocalizedString.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = GQ4LocalizedString/GQ4LocalizedString.entitlements;
@@ -1310,6 +1356,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				PRODUCT_BUNDLE_IDENTIFIER = persional.GQ4LocalizedString;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

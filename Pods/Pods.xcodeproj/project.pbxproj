@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0175C1C8CD70B25232D0C943B922934F /* workbook.c in Sources */ = {isa = PBXBuildFile; fileRef = E4636C0CD29B12B8512C619D0D1513CF /* workbook.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		0477259E31EDF7813B476BAC5F064562 /* utility.c in Sources */ = {isa = PBXBuildFile; fileRef = AE1AFB318A7A2F8FBA3B0833ED0A6E26 /* utility.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		067A7C80E31DA4821ACCCDF29A58DE7A /* YYModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1447177555859C49DDC03036940532 /* YYModel-dummy.m */; };
+		18B97F6F1BA67ACD3B795029C073D9EC /* Pods-GQ4LocalizedString-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C2219F41EA0C9E64CE4BEC6F0C7E288 /* Pods-GQ4LocalizedString-dummy.m */; };
+		1904ADEB33D4368348C5DBD244C5FB53 /* content_types.c in Sources */ = {isa = PBXBuildFile; fileRef = B9EEE36F965DFF25F8D79183E92BBE68 /* content_types.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		1B06618753A69988CAAE025528B38B8F /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = C30C2C765545EC836D190629F969A82E /* core.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1C0454D0BACB3225733C80ED4A7FB6CF /* app.c in Sources */ = {isa = PBXBuildFile; fileRef = E7E10961966AC72F5A51A259970316A1 /* app.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		1D399075FAD875436A8EA38712BC635E /* custom.h in Headers */ = {isa = PBXBuildFile; fileRef = 972C2AB9023003A3A5AE961F8AB63B68 /* custom.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1E8BE3912E5767596216B5A40EF72EF2 /* chart.c in Sources */ = {isa = PBXBuildFile; fileRef = 88C9D563E3BD859ED162FCE6D43FE146 /* chart.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		2064DB19D27DF88323E5B52CB02C74BD /* worksheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 045D0097925710B6D9ABA1C83B0AE45F /* worksheet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		23E33D53D888FEDEF4DAE0515EAF042E /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = F1EC988F8C2E4226DF64EDBF34ADEC16 /* common.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		26CEEA403CF348DB67081F17AED3B12A /* worksheet.c in Sources */ = {isa = PBXBuildFile; fileRef = C7E0129D2A8FCB2C101D32EABA328802 /* worksheet.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		31BD7248894E9FE4469ADA74A156E320 /* content_types.h in Headers */ = {isa = PBXBuildFile; fileRef = A3BDB58196F5D03B7BA61AB26F2EF925 /* content_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		32BFFD55208165DF94C3FAC41CF2FAD2 /* styles.h in Headers */ = {isa = PBXBuildFile; fileRef = E6D0B10967D0898785DA065200DEB8D7 /* styles.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3AFEB7B376BFC37581268C14D5A6A39E /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 0AE855D2282133A362CAF66519B93D82 /* zip.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		3B41AA5105BEC805280A190449684B45 /* xlsxwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = B1172D05D8636B6A1130BCB134B700C6 /* xlsxwriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4010D8EC21C1453F424BC7CFBAC8F586 /* tmpfileplus.h in Headers */ = {isa = PBXBuildFile; fileRef = 65F64C4F9F3BA2F3B26F7530BFDDE310 /* tmpfileplus.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45C884D1B00F5B7395C52180D75AD23B /* format.c in Sources */ = {isa = PBXBuildFile; fileRef = DFE4086CA371C2E3B62E3748A0EDB1DA /* format.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		469C2178663D5C46C5E19808BC6163A3 /* YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E121C8B544F89D6E5B04187B7D6EE910 /* YYModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4797978933AE1E44D0E9045EAC9FD962 /* theme.c in Sources */ = {isa = PBXBuildFile; fileRef = 84DC293BB0C4C52C44308098983CC445 /* theme.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		4AE3884535748D94D593AC09BA09E712 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 95F8DB8E7018D68CE9072C9D1F574439 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		4E2BEA4791D21AD7CA54CC2358C48068 /* custom.c in Sources */ = {isa = PBXBuildFile; fileRef = 5521946C88816D54D1695455F89F5D90 /* custom.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		4F7790392ACE7FAA8621C937772C2D94 /* chart.h in Headers */ = {isa = PBXBuildFile; fileRef = 45EB58BA9712F0D7BD94F7C204E0EF79 /* chart.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4FE43D557AEA2DF0B43EDFE48BA43CB0 /* hash_table.c in Sources */ = {isa = PBXBuildFile; fileRef = 92A4C2AB21CB27BAF719EAFCF72AF448 /* hash_table.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		59713D4553C9B0D2EFFFA04AC2B6B4FD /* tree.h in Headers */ = {isa = PBXBuildFile; fileRef = 20A7D44C90375FC35D120FF1F5F0E1DF /* tree.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		611E815AC4B89FCDD35EBA811BAF9353 /* chartsheet.c in Sources */ = {isa = PBXBuildFile; fileRef = ABF4287472821016DC9C1BA1FBF490C5 /* chartsheet.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		61D1573ED260A4146491BF6746E4CD7B /* format.h in Headers */ = {isa = PBXBuildFile; fileRef = 35681E5E4C4848873C7B7E6276E59C20 /* format.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6BC5B1BEA1D0AEFD8968E2460896CF95 /* core.c in Sources */ = {isa = PBXBuildFile; fileRef = 6696409C850CA546F458B9CB58012694 /* core.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		6F24AD851CDEEE810E3CDC3E68782018 /* app.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B28D7E5133F063EED3EC634B3FA27B7 /* app.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		72B1E56FC2F0B58E102D47A549963B1D /* styles.c in Sources */ = {isa = PBXBuildFile; fileRef = 69F1703F510575FD7A054A2D248009BC /* styles.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		73EC345943F9D470DE5A2563876EC001 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = AB99F6F665750F15E00A0FDAEA37BF6D /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		77D522F585AB16F0F0371D44AC85113B /* NSObject+YYModel.h in Headers */ = {isa = PBXBuildFile; fileRef = C65E5458B244B1A941676672BE4C6E28 /* NSObject+YYModel.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D1D2938E62833C44F94E63750CB6BD0 /* shared_strings.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A3E623BACF408453C4A85A781855A15 /* shared_strings.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		827E7F32F6283AB675DC81A4EB4FE0CE /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABC0DD41D2B2CD73667552ADE78A8DE /* YYClassInfo.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		8573765A5E0E7C379A1B2F22675B0919 /* relationships.h in Headers */ = {isa = PBXBuildFile; fileRef = 7D31FCAE121183F0C8E4AEB438302008 /* relationships.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		944D99DDFAF125DC961BB9803EB58265 /* tmpfileplus.c in Sources */ = {isa = PBXBuildFile; fileRef = 0459A69D6648BCF4965A92DE78B3D9E0 /* tmpfileplus.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		9729CCC3097173E7C681A28DDFCB998E /* utility.h in Headers */ = {isa = PBXBuildFile; fileRef = CB5BB48030B3A5645F2AAEF32AE7D400 /* utility.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		98D910CA6006E5E5CB6584AC239FF3CA /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 896B644B3758AD2EEC4200111ABCA2C1 /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9C0C907E28875BBDF0F0D4C0E54370E6 /* libxlsxwriter-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A184154FD2FDAE879C0611BC88DBC8DF /* libxlsxwriter-dummy.m */; };
+		A2B153F8D9B952A54FF815809F68D74D /* libxlsxwriter-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B1208037C57A0EC6CCA359CC2209EB62 /* libxlsxwriter-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A9CE399CD96239F245FDFABFDB17FD5E /* hash_table.h in Headers */ = {isa = PBXBuildFile; fileRef = C60A96166B8A23E359F65FAA9F62AAE2 /* hash_table.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0981D5A1FA3EC407D7BCB3F6E9FED35 /* workbook.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F212A689EFC0778E39138B9086C7D96 /* workbook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B2E4E0E3012C314C5022CD877BB067BA /* queue.h in Headers */ = {isa = PBXBuildFile; fileRef = F479912FED45A5A3E6C9388FBC6BEC93 /* queue.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BD97B79CA7EA9112D7A990B79512EB83 /* drawing.h in Headers */ = {isa = PBXBuildFile; fileRef = E442294BEDC16CA18052E37A339FE4C8 /* drawing.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C5AF9184954B88121802A0099B78D67A /* theme.h in Headers */ = {isa = PBXBuildFile; fileRef = 60E03B0B35084220503B8BF2621012A3 /* theme.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA867037360AF264E4EBD54B6EFADE40 /* YYClassInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 17905CE0EA46CF827D2884C58B9CD336 /* YYClassInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D06E1BA970865281D93F5B2F68B58C93 /* relationships.c in Sources */ = {isa = PBXBuildFile; fileRef = 12DFA827EF1BEDC0911CAB23771B4B0D /* relationships.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		DF7AF90F7C21E481C0954AB51329AE88 /* packager.c in Sources */ = {isa = PBXBuildFile; fileRef = C9E9B2A687D05B31E157C27DD634BA26 /* packager.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		E27A5554AF1C922C93AC62A74EFD4CB7 /* xmlwriter.c in Sources */ = {isa = PBXBuildFile; fileRef = DF98C02023A16C8C46C146CBB00600D6 /* xmlwriter.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		E31AB3DC12485935281A3AC8585D888F /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D072F6D50DA29628CE0EBD13698457A5 /* NSObject+YYModel.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EF4197520174E7D7774FFBDBBBB86AD8 /* drawing.c in Sources */ = {isa = PBXBuildFile; fileRef = D514925F60FA7DFF4CD09AF5C52B69D5 /* drawing.c */; settings = {COMPILER_FLAGS = "-DNOCRYPT=1 -DNOUNCRYPT=1"; }; };
+		F64557D7342061230B977D94FE92CDDA /* chartsheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CFAE0ED47CBB9A56035ED7BA531AEDE /* chartsheet.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F878B9332326D64869CEF6A74D9C75A5 /* xmlwriter.h in Headers */ = {isa = PBXBuildFile; fileRef = EE3C5A052B12DF7297FA27444BF76D27 /* xmlwriter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F988F6D707C42F6BD09E8E0E5B63F2FE /* shared_strings.h in Headers */ = {isa = PBXBuildFile; fileRef = 2820271F3A82335C1270FC48A4CBD679 /* shared_strings.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FFAE44B822FC2385387AA90E1A990594 /* packager.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B16791DD83771097345B39E5F6577A3 /* packager.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0565BCF83B04783A31880BF03A8E9249 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE44B5C5AD1A79035EDBAE83CBE468F0;
+			remoteInfo = libxlsxwriter;
+		};
+		E7183EFAE0DACB3068831C1C06E994DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97EF2C60CF6A1EBFC677E23FBE0A03B0;
+			remoteInfo = YYModel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0459A69D6648BCF4965A92DE78B3D9E0 /* tmpfileplus.c */ = {isa = PBXFileReference; includeInIndex = 1; name = tmpfileplus.c; path = third_party/tmpfileplus/tmpfileplus.c; sourceTree = "<group>"; };
+		045D0097925710B6D9ABA1C83B0AE45F /* worksheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = worksheet.h; path = include/xlsxwriter/worksheet.h; sourceTree = "<group>"; };
+		0AE855D2282133A362CAF66519B93D82 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = third_party/minizip/zip.c; sourceTree = "<group>"; };
+		0B16791DD83771097345B39E5F6577A3 /* packager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = packager.h; path = include/xlsxwriter/packager.h; sourceTree = "<group>"; };
+		12DFA827EF1BEDC0911CAB23771B4B0D /* relationships.c */ = {isa = PBXFileReference; includeInIndex = 1; name = relationships.c; path = src/relationships.c; sourceTree = "<group>"; };
+		17905CE0EA46CF827D2884C58B9CD336 /* YYClassInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYClassInfo.h; path = YYModel/YYClassInfo.h; sourceTree = "<group>"; };
+		1E2CA3E1380B94470853E643B3846F37 /* Pods-GQ4LocalizedString-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GQ4LocalizedString-acknowledgements.markdown"; sourceTree = "<group>"; };
+		1E535BEEE12AA31BF949BAFCBA631356 /* libxlsxwriter.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = libxlsxwriter.xcconfig; sourceTree = "<group>"; };
+		20A7D44C90375FC35D120FF1F5F0E1DF /* tree.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tree.h; path = include/xlsxwriter/third_party/tree.h; sourceTree = "<group>"; };
+		2820271F3A82335C1270FC48A4CBD679 /* shared_strings.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = shared_strings.h; path = include/xlsxwriter/shared_strings.h; sourceTree = "<group>"; };
+		2AAE245233EEDF0987572E7E0F078E3E /* Pods-GQ4LocalizedString.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GQ4LocalizedString.release.xcconfig"; sourceTree = "<group>"; };
+		2ABC0DD41D2B2CD73667552ADE78A8DE /* YYClassInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = YYClassInfo.m; path = YYModel/YYClassInfo.m; sourceTree = "<group>"; };
+		3440098117BF08617B7556B2B8B75B0C /* Pods-GQ4LocalizedString.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GQ4LocalizedString.debug.xcconfig"; sourceTree = "<group>"; };
+		35681E5E4C4848873C7B7E6276E59C20 /* format.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = format.h; path = include/xlsxwriter/format.h; sourceTree = "<group>"; };
+		3F212A689EFC0778E39138B9086C7D96 /* workbook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = workbook.h; path = include/xlsxwriter/workbook.h; sourceTree = "<group>"; };
+		429C552C1F6CBCA56ED7047ABFCDAF72 /* Pods-GQ4LocalizedString-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GQ4LocalizedString-acknowledgements.plist"; sourceTree = "<group>"; };
+		45EB58BA9712F0D7BD94F7C204E0EF79 /* chart.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chart.h; path = include/xlsxwriter/chart.h; sourceTree = "<group>"; };
+		5521946C88816D54D1695455F89F5D90 /* custom.c */ = {isa = PBXFileReference; includeInIndex = 1; name = custom.c; path = src/custom.c; sourceTree = "<group>"; };
+		5B28D7E5133F063EED3EC634B3FA27B7 /* app.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = app.h; path = include/xlsxwriter/app.h; sourceTree = "<group>"; };
+		5B4EE6EA43A2F1280676D2D70A5E7CAA /* YYModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "YYModel-prefix.pch"; sourceTree = "<group>"; };
+		5C2219F41EA0C9E64CE4BEC6F0C7E288 /* Pods-GQ4LocalizedString-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GQ4LocalizedString-dummy.m"; sourceTree = "<group>"; };
+		5CFAE0ED47CBB9A56035ED7BA531AEDE /* chartsheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = chartsheet.h; path = include/xlsxwriter/chartsheet.h; sourceTree = "<group>"; };
+		60E03B0B35084220503B8BF2621012A3 /* theme.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = theme.h; path = include/xlsxwriter/theme.h; sourceTree = "<group>"; };
+		65F64C4F9F3BA2F3B26F7530BFDDE310 /* tmpfileplus.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tmpfileplus.h; path = include/xlsxwriter/third_party/tmpfileplus.h; sourceTree = "<group>"; };
+		6696409C850CA546F458B9CB58012694 /* core.c */ = {isa = PBXFileReference; includeInIndex = 1; name = core.c; path = src/core.c; sourceTree = "<group>"; };
+		67606065612D9A2F738488BB2488F27C /* YYModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = YYModel.xcconfig; sourceTree = "<group>"; };
+		69F1703F510575FD7A054A2D248009BC /* styles.c */ = {isa = PBXFileReference; includeInIndex = 1; name = styles.c; path = src/styles.c; sourceTree = "<group>"; };
+		7D31FCAE121183F0C8E4AEB438302008 /* relationships.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = relationships.h; path = include/xlsxwriter/relationships.h; sourceTree = "<group>"; };
+		84DC293BB0C4C52C44308098983CC445 /* theme.c */ = {isa = PBXFileReference; includeInIndex = 1; name = theme.c; path = src/theme.c; sourceTree = "<group>"; };
+		88C9D563E3BD859ED162FCE6D43FE146 /* chart.c */ = {isa = PBXFileReference; includeInIndex = 1; name = chart.c; path = src/chart.c; sourceTree = "<group>"; };
+		896B644B3758AD2EEC4200111ABCA2C1 /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = include/xlsxwriter/third_party/ioapi.h; sourceTree = "<group>"; };
+		92A4C2AB21CB27BAF719EAFCF72AF448 /* hash_table.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hash_table.c; path = src/hash_table.c; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95F8DB8E7018D68CE9072C9D1F574439 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = third_party/minizip/ioapi.c; sourceTree = "<group>"; };
+		972C2AB9023003A3A5AE961F8AB63B68 /* custom.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = custom.h; path = include/xlsxwriter/custom.h; sourceTree = "<group>"; };
+		9A3E623BACF408453C4A85A781855A15 /* shared_strings.c */ = {isa = PBXFileReference; includeInIndex = 1; name = shared_strings.c; path = src/shared_strings.c; sourceTree = "<group>"; };
+		A184154FD2FDAE879C0611BC88DBC8DF /* libxlsxwriter-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "libxlsxwriter-dummy.m"; sourceTree = "<group>"; };
+		A3BDB58196F5D03B7BA61AB26F2EF925 /* content_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = content_types.h; path = include/xlsxwriter/content_types.h; sourceTree = "<group>"; };
+		AB99F6F665750F15E00A0FDAEA37BF6D /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = include/xlsxwriter/third_party/zip.h; sourceTree = "<group>"; };
+		ABF4287472821016DC9C1BA1FBF490C5 /* chartsheet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = chartsheet.c; path = src/chartsheet.c; sourceTree = "<group>"; };
+		AE1AFB318A7A2F8FBA3B0833ED0A6E26 /* utility.c */ = {isa = PBXFileReference; includeInIndex = 1; name = utility.c; path = src/utility.c; sourceTree = "<group>"; };
+		B02DE082E3AD49D09E90A1AC68F0C6B5 /* libPods-GQ4LocalizedString.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-GQ4LocalizedString.a"; path = "libPods-GQ4LocalizedString.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1172D05D8636B6A1130BCB134B700C6 /* xlsxwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xlsxwriter.h; path = include/xlsxwriter.h; sourceTree = "<group>"; };
+		B1208037C57A0EC6CCA359CC2209EB62 /* libxlsxwriter-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "libxlsxwriter-umbrella.h"; path = "include/xlsxwriter/libxlsxwriter-umbrella.h"; sourceTree = "<group>"; };
+		B744E88BC40BFBB43C82C3252643A76D /* libxlsxwriter-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "libxlsxwriter-prefix.pch"; sourceTree = "<group>"; };
+		B9EEE36F965DFF25F8D79183E92BBE68 /* content_types.c */ = {isa = PBXFileReference; includeInIndex = 1; name = content_types.c; path = src/content_types.c; sourceTree = "<group>"; };
+		BDC6CD0B9ABA04EE9395A6DB802A439E /* libYYModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libYYModel.a; path = libYYModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		C30C2C765545EC836D190629F969A82E /* core.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = core.h; path = include/xlsxwriter/core.h; sourceTree = "<group>"; };
+		C60A96166B8A23E359F65FAA9F62AAE2 /* hash_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hash_table.h; path = include/xlsxwriter/hash_table.h; sourceTree = "<group>"; };
+		C65E5458B244B1A941676672BE4C6E28 /* NSObject+YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+YYModel.h"; path = "YYModel/NSObject+YYModel.h"; sourceTree = "<group>"; };
+		C7E0129D2A8FCB2C101D32EABA328802 /* worksheet.c */ = {isa = PBXFileReference; includeInIndex = 1; name = worksheet.c; path = src/worksheet.c; sourceTree = "<group>"; };
+		C9E9B2A687D05B31E157C27DD634BA26 /* packager.c */ = {isa = PBXFileReference; includeInIndex = 1; name = packager.c; path = src/packager.c; sourceTree = "<group>"; };
+		CB5BB48030B3A5645F2AAEF32AE7D400 /* utility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = utility.h; path = include/xlsxwriter/utility.h; sourceTree = "<group>"; };
+		CD1447177555859C49DDC03036940532 /* YYModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "YYModel-dummy.m"; sourceTree = "<group>"; };
+		D072F6D50DA29628CE0EBD13698457A5 /* NSObject+YYModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+YYModel.m"; path = "YYModel/NSObject+YYModel.m"; sourceTree = "<group>"; };
+		D514925F60FA7DFF4CD09AF5C52B69D5 /* drawing.c */ = {isa = PBXFileReference; includeInIndex = 1; name = drawing.c; path = src/drawing.c; sourceTree = "<group>"; };
+		DF98C02023A16C8C46C146CBB00600D6 /* xmlwriter.c */ = {isa = PBXFileReference; includeInIndex = 1; name = xmlwriter.c; path = src/xmlwriter.c; sourceTree = "<group>"; };
+		DFE4086CA371C2E3B62E3748A0EDB1DA /* format.c */ = {isa = PBXFileReference; includeInIndex = 1; name = format.c; path = src/format.c; sourceTree = "<group>"; };
+		E121C8B544F89D6E5B04187B7D6EE910 /* YYModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = YYModel.h; path = YYModel/YYModel.h; sourceTree = "<group>"; };
+		E442294BEDC16CA18052E37A339FE4C8 /* drawing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = drawing.h; path = include/xlsxwriter/drawing.h; sourceTree = "<group>"; };
+		E4636C0CD29B12B8512C619D0D1513CF /* workbook.c */ = {isa = PBXFileReference; includeInIndex = 1; name = workbook.c; path = src/workbook.c; sourceTree = "<group>"; };
+		E6D0B10967D0898785DA065200DEB8D7 /* styles.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = styles.h; path = include/xlsxwriter/styles.h; sourceTree = "<group>"; };
+		E7E10961966AC72F5A51A259970316A1 /* app.c */ = {isa = PBXFileReference; includeInIndex = 1; name = app.c; path = src/app.c; sourceTree = "<group>"; };
+		EB5C35236595500C1337078B58B4F53F /* liblibxlsxwriter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = liblibxlsxwriter.a; path = liblibxlsxwriter.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE3C5A052B12DF7297FA27444BF76D27 /* xmlwriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = xmlwriter.h; path = include/xlsxwriter/xmlwriter.h; sourceTree = "<group>"; };
+		F1EC988F8C2E4226DF64EDBF34ADEC16 /* common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = common.h; path = include/xlsxwriter/common.h; sourceTree = "<group>"; };
+		F479912FED45A5A3E6C9388FBC6BEC93 /* queue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = queue.h; path = include/xlsxwriter/third_party/queue.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E4F58336F8255EDA15A1D2356ACD2E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4000E80DCF45C36144C519E2F249B46B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5B03F8EAFDBEC66F8FBDA8D25AE7472E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0508BA40B16E20D2652E89278069912B /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				67606065612D9A2F738488BB2488F27C /* YYModel.xcconfig */,
+				CD1447177555859C49DDC03036940532 /* YYModel-dummy.m */,
+				5B4EE6EA43A2F1280676D2D70A5E7CAA /* YYModel-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/YYModel";
+			sourceTree = "<group>";
+		};
+		0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1342B903925E68C578BA58254F7E5D01 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				69D4342ADE9DDD18FA2447483602BB2E /* Pods-GQ4LocalizedString */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		25A4E227060879C81EB79307B99C826F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6B29EDEA200F24B315736C342698915 /* libxlsxwriter */,
+				A74402807E9F0053D36C45D50A1793ED /* YYModel */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		25F207A297E0EB32169838F443AFC8CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E535BEEE12AA31BF949BAFCBA631356 /* libxlsxwriter.xcconfig */,
+				A184154FD2FDAE879C0611BC88DBC8DF /* libxlsxwriter-dummy.m */,
+				B744E88BC40BFBB43C82C3252643A76D /* libxlsxwriter-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/libxlsxwriter";
+			sourceTree = "<group>";
+		};
+		69D4342ADE9DDD18FA2447483602BB2E /* Pods-GQ4LocalizedString */ = {
+			isa = PBXGroup;
+			children = (
+				1E2CA3E1380B94470853E643B3846F37 /* Pods-GQ4LocalizedString-acknowledgements.markdown */,
+				429C552C1F6CBCA56ED7047ABFCDAF72 /* Pods-GQ4LocalizedString-acknowledgements.plist */,
+				5C2219F41EA0C9E64CE4BEC6F0C7E288 /* Pods-GQ4LocalizedString-dummy.m */,
+				3440098117BF08617B7556B2B8B75B0C /* Pods-GQ4LocalizedString.debug.xcconfig */,
+				2AAE245233EEDF0987572E7E0F078E3E /* Pods-GQ4LocalizedString.release.xcconfig */,
+			);
+			name = "Pods-GQ4LocalizedString";
+			path = "Target Support Files/Pods-GQ4LocalizedString";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F8D2E47FE03D3B91B51069F7C273AF4 /* Frameworks */,
+				25A4E227060879C81EB79307B99C826F /* Pods */,
+				92497F4DA00E144ED671A9B727CA2B19 /* Products */,
+				1342B903925E68C578BA58254F7E5D01 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		92497F4DA00E144ED671A9B727CA2B19 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EB5C35236595500C1337078B58B4F53F /* liblibxlsxwriter.a */,
+				B02DE082E3AD49D09E90A1AC68F0C6B5 /* libPods-GQ4LocalizedString.a */,
+				BDC6CD0B9ABA04EE9395A6DB802A439E /* libYYModel.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A74402807E9F0053D36C45D50A1793ED /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				C65E5458B244B1A941676672BE4C6E28 /* NSObject+YYModel.h */,
+				D072F6D50DA29628CE0EBD13698457A5 /* NSObject+YYModel.m */,
+				17905CE0EA46CF827D2884C58B9CD336 /* YYClassInfo.h */,
+				2ABC0DD41D2B2CD73667552ADE78A8DE /* YYClassInfo.m */,
+				E121C8B544F89D6E5B04187B7D6EE910 /* YYModel.h */,
+				0508BA40B16E20D2652E89278069912B /* Support Files */,
+			);
+			name = YYModel;
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		C6B29EDEA200F24B315736C342698915 /* libxlsxwriter */ = {
+			isa = PBXGroup;
+			children = (
+				E7E10961966AC72F5A51A259970316A1 /* app.c */,
+				5B28D7E5133F063EED3EC634B3FA27B7 /* app.h */,
+				88C9D563E3BD859ED162FCE6D43FE146 /* chart.c */,
+				45EB58BA9712F0D7BD94F7C204E0EF79 /* chart.h */,
+				ABF4287472821016DC9C1BA1FBF490C5 /* chartsheet.c */,
+				5CFAE0ED47CBB9A56035ED7BA531AEDE /* chartsheet.h */,
+				F1EC988F8C2E4226DF64EDBF34ADEC16 /* common.h */,
+				B9EEE36F965DFF25F8D79183E92BBE68 /* content_types.c */,
+				A3BDB58196F5D03B7BA61AB26F2EF925 /* content_types.h */,
+				6696409C850CA546F458B9CB58012694 /* core.c */,
+				C30C2C765545EC836D190629F969A82E /* core.h */,
+				5521946C88816D54D1695455F89F5D90 /* custom.c */,
+				972C2AB9023003A3A5AE961F8AB63B68 /* custom.h */,
+				D514925F60FA7DFF4CD09AF5C52B69D5 /* drawing.c */,
+				E442294BEDC16CA18052E37A339FE4C8 /* drawing.h */,
+				DFE4086CA371C2E3B62E3748A0EDB1DA /* format.c */,
+				35681E5E4C4848873C7B7E6276E59C20 /* format.h */,
+				92A4C2AB21CB27BAF719EAFCF72AF448 /* hash_table.c */,
+				C60A96166B8A23E359F65FAA9F62AAE2 /* hash_table.h */,
+				95F8DB8E7018D68CE9072C9D1F574439 /* ioapi.c */,
+				896B644B3758AD2EEC4200111ABCA2C1 /* ioapi.h */,
+				B1208037C57A0EC6CCA359CC2209EB62 /* libxlsxwriter-umbrella.h */,
+				C9E9B2A687D05B31E157C27DD634BA26 /* packager.c */,
+				0B16791DD83771097345B39E5F6577A3 /* packager.h */,
+				F479912FED45A5A3E6C9388FBC6BEC93 /* queue.h */,
+				12DFA827EF1BEDC0911CAB23771B4B0D /* relationships.c */,
+				7D31FCAE121183F0C8E4AEB438302008 /* relationships.h */,
+				9A3E623BACF408453C4A85A781855A15 /* shared_strings.c */,
+				2820271F3A82335C1270FC48A4CBD679 /* shared_strings.h */,
+				69F1703F510575FD7A054A2D248009BC /* styles.c */,
+				E6D0B10967D0898785DA065200DEB8D7 /* styles.h */,
+				84DC293BB0C4C52C44308098983CC445 /* theme.c */,
+				60E03B0B35084220503B8BF2621012A3 /* theme.h */,
+				0459A69D6648BCF4965A92DE78B3D9E0 /* tmpfileplus.c */,
+				65F64C4F9F3BA2F3B26F7530BFDDE310 /* tmpfileplus.h */,
+				20A7D44C90375FC35D120FF1F5F0E1DF /* tree.h */,
+				AE1AFB318A7A2F8FBA3B0833ED0A6E26 /* utility.c */,
+				CB5BB48030B3A5645F2AAEF32AE7D400 /* utility.h */,
+				E4636C0CD29B12B8512C619D0D1513CF /* workbook.c */,
+				3F212A689EFC0778E39138B9086C7D96 /* workbook.h */,
+				C7E0129D2A8FCB2C101D32EABA328802 /* worksheet.c */,
+				045D0097925710B6D9ABA1C83B0AE45F /* worksheet.h */,
+				B1172D05D8636B6A1130BCB134B700C6 /* xlsxwriter.h */,
+				DF98C02023A16C8C46C146CBB00600D6 /* xmlwriter.c */,
+				EE3C5A052B12DF7297FA27444BF76D27 /* xmlwriter.h */,
+				0AE855D2282133A362CAF66519B93D82 /* zip.c */,
+				AB99F6F665750F15E00A0FDAEA37BF6D /* zip.h */,
+				25F207A297E0EB32169838F443AFC8CF /* Support Files */,
+			);
+			name = libxlsxwriter;
+			path = libxlsxwriter;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		35357E1B499679C44391FBFF21447F11 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F24AD851CDEEE810E3CDC3E68782018 /* app.h in Headers */,
+				4F7790392ACE7FAA8621C937772C2D94 /* chart.h in Headers */,
+				F64557D7342061230B977D94FE92CDDA /* chartsheet.h in Headers */,
+				23E33D53D888FEDEF4DAE0515EAF042E /* common.h in Headers */,
+				31BD7248894E9FE4469ADA74A156E320 /* content_types.h in Headers */,
+				1B06618753A69988CAAE025528B38B8F /* core.h in Headers */,
+				1D399075FAD875436A8EA38712BC635E /* custom.h in Headers */,
+				BD97B79CA7EA9112D7A990B79512EB83 /* drawing.h in Headers */,
+				61D1573ED260A4146491BF6746E4CD7B /* format.h in Headers */,
+				A9CE399CD96239F245FDFABFDB17FD5E /* hash_table.h in Headers */,
+				98D910CA6006E5E5CB6584AC239FF3CA /* ioapi.h in Headers */,
+				A2B153F8D9B952A54FF815809F68D74D /* libxlsxwriter-umbrella.h in Headers */,
+				FFAE44B822FC2385387AA90E1A990594 /* packager.h in Headers */,
+				B2E4E0E3012C314C5022CD877BB067BA /* queue.h in Headers */,
+				8573765A5E0E7C379A1B2F22675B0919 /* relationships.h in Headers */,
+				F988F6D707C42F6BD09E8E0E5B63F2FE /* shared_strings.h in Headers */,
+				32BFFD55208165DF94C3FAC41CF2FAD2 /* styles.h in Headers */,
+				C5AF9184954B88121802A0099B78D67A /* theme.h in Headers */,
+				4010D8EC21C1453F424BC7CFBAC8F586 /* tmpfileplus.h in Headers */,
+				59713D4553C9B0D2EFFFA04AC2B6B4FD /* tree.h in Headers */,
+				9729CCC3097173E7C681A28DDFCB998E /* utility.h in Headers */,
+				B0981D5A1FA3EC407D7BCB3F6E9FED35 /* workbook.h in Headers */,
+				2064DB19D27DF88323E5B52CB02C74BD /* worksheet.h in Headers */,
+				3B41AA5105BEC805280A190449684B45 /* xlsxwriter.h in Headers */,
+				F878B9332326D64869CEF6A74D9C75A5 /* xmlwriter.h in Headers */,
+				73EC345943F9D470DE5A2563876EC001 /* zip.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0D30D86D32A2A500DF38519A4D1B870 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77D522F585AB16F0F0371D44AC85113B /* NSObject+YYModel.h in Headers */,
+				CA867037360AF264E4EBD54B6EFADE40 /* YYClassInfo.h in Headers */,
+				469C2178663D5C46C5E19808BC6163A3 /* YYModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F0E2108818A1F3996CB75FA6B248CBE5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		97EF2C60CF6A1EBFC677E23FBE0A03B0 /* YYModel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1B28889503FA58FE9627A236ABC5E41F /* Build configuration list for PBXNativeTarget "YYModel" */;
+			buildPhases = (
+				F0D30D86D32A2A500DF38519A4D1B870 /* Headers */,
+				CD359040A8D0F847A6B17360B82009A0 /* Sources */,
+				1E4F58336F8255EDA15A1D2356ACD2E7 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YYModel;
+			productName = YYModel;
+			productReference = BDC6CD0B9ABA04EE9395A6DB802A439E /* libYYModel.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BC08372FF6E85A188618017DE27781E4 /* Pods-GQ4LocalizedString */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D826E92C906113B19481C1642F8B22B0 /* Build configuration list for PBXNativeTarget "Pods-GQ4LocalizedString" */;
+			buildPhases = (
+				F0E2108818A1F3996CB75FA6B248CBE5 /* Headers */,
+				8CFAE3CF2DF82D2272FB2A807E9AE5A9 /* Sources */,
+				5B03F8EAFDBEC66F8FBDA8D25AE7472E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BBFE580792F24E1455A856CFC5E8F25E /* PBXTargetDependency */,
+				9FFB740897808C49573A044ECF9B2E28 /* PBXTargetDependency */,
+			);
+			name = "Pods-GQ4LocalizedString";
+			productName = "Pods-GQ4LocalizedString";
+			productReference = B02DE082E3AD49D09E90A1AC68F0C6B5 /* libPods-GQ4LocalizedString.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		EE44B5C5AD1A79035EDBAE83CBE468F0 /* libxlsxwriter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D8D5C405977B60BB3696FE32B66E4579 /* Build configuration list for PBXNativeTarget "libxlsxwriter" */;
+			buildPhases = (
+				35357E1B499679C44391FBFF21447F11 /* Headers */,
+				F760F0B5913BFA9439010258B4CA981D /* Sources */,
+				4000E80DCF45C36144C519E2F249B46B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = libxlsxwriter;
+			productName = libxlsxwriter;
+			productReference = EB5C35236595500C1337078B58B4F53F /* liblibxlsxwriter.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 92497F4DA00E144ED671A9B727CA2B19 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE44B5C5AD1A79035EDBAE83CBE468F0 /* libxlsxwriter */,
+				BC08372FF6E85A188618017DE27781E4 /* Pods-GQ4LocalizedString */,
+				97EF2C60CF6A1EBFC677E23FBE0A03B0 /* YYModel */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8CFAE3CF2DF82D2272FB2A807E9AE5A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B97F6F1BA67ACD3B795029C073D9EC /* Pods-GQ4LocalizedString-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD359040A8D0F847A6B17360B82009A0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E31AB3DC12485935281A3AC8585D888F /* NSObject+YYModel.m in Sources */,
+				827E7F32F6283AB675DC81A4EB4FE0CE /* YYClassInfo.m in Sources */,
+				067A7C80E31DA4821ACCCDF29A58DE7A /* YYModel-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F760F0B5913BFA9439010258B4CA981D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C0454D0BACB3225733C80ED4A7FB6CF /* app.c in Sources */,
+				1E8BE3912E5767596216B5A40EF72EF2 /* chart.c in Sources */,
+				611E815AC4B89FCDD35EBA811BAF9353 /* chartsheet.c in Sources */,
+				1904ADEB33D4368348C5DBD244C5FB53 /* content_types.c in Sources */,
+				6BC5B1BEA1D0AEFD8968E2460896CF95 /* core.c in Sources */,
+				4E2BEA4791D21AD7CA54CC2358C48068 /* custom.c in Sources */,
+				EF4197520174E7D7774FFBDBBBB86AD8 /* drawing.c in Sources */,
+				45C884D1B00F5B7395C52180D75AD23B /* format.c in Sources */,
+				4FE43D557AEA2DF0B43EDFE48BA43CB0 /* hash_table.c in Sources */,
+				4AE3884535748D94D593AC09BA09E712 /* ioapi.c in Sources */,
+				9C0C907E28875BBDF0F0D4C0E54370E6 /* libxlsxwriter-dummy.m in Sources */,
+				DF7AF90F7C21E481C0954AB51329AE88 /* packager.c in Sources */,
+				D06E1BA970865281D93F5B2F68B58C93 /* relationships.c in Sources */,
+				7D1D2938E62833C44F94E63750CB6BD0 /* shared_strings.c in Sources */,
+				72B1E56FC2F0B58E102D47A549963B1D /* styles.c in Sources */,
+				4797978933AE1E44D0E9045EAC9FD962 /* theme.c in Sources */,
+				944D99DDFAF125DC961BB9803EB58265 /* tmpfileplus.c in Sources */,
+				0477259E31EDF7813B476BAC5F064562 /* utility.c in Sources */,
+				0175C1C8CD70B25232D0C943B922934F /* workbook.c in Sources */,
+				26CEEA403CF348DB67081F17AED3B12A /* worksheet.c in Sources */,
+				E27A5554AF1C922C93AC62A74EFD4CB7 /* xmlwriter.c in Sources */,
+				3AFEB7B376BFC37581268C14D5A6A39E /* zip.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9FFB740897808C49573A044ECF9B2E28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = libxlsxwriter;
+			target = EE44B5C5AD1A79035EDBAE83CBE468F0 /* libxlsxwriter */;
+			targetProxy = 0565BCF83B04783A31880BF03A8E9249 /* PBXContainerItemProxy */;
+		};
+		BBFE580792F24E1455A856CFC5E8F25E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YYModel;
+			target = 97EF2C60CF6A1EBFC677E23FBE0A03B0 /* YYModel */;
+			targetProxy = E7183EFAE0DACB3068831C1C06E994DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3C247C6BFC39DBEC9B74A27BEE2ABE24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E535BEEE12AA31BF949BAFCBA631356 /* libxlsxwriter.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = xlsxwriter;
+				PRODUCT_NAME = libxlsxwriter;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		7E2A6FA31FA8CD1A034408080357A040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E535BEEE12AA31BF949BAFCBA631356 /* libxlsxwriter.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/libxlsxwriter/libxlsxwriter-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = xlsxwriter;
+				PRODUCT_NAME = libxlsxwriter;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		9FBD98D2E2C558B013D91DC10548853E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67606065612D9A2F738488BB2488F27C /* YYModel.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Release;
+		};
+		C14363075AB5B62A9173AF90CF400F5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		C1ECCF52DC1F978B7F32EC3AD6AE9B93 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		C47EF37E89D4BD3A54BAC6A1F6D795EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AAE245233EEDF0987572E7E0F078E3E /* Pods-GQ4LocalizedString.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		C9F08FF5D6D8564D5197CC5265D721D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67606065612D9A2F738488BB2488F27C /* YYModel.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				GCC_PREFIX_HEADER = "Target Support Files/YYModel/YYModel-prefix.pch";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = YYModel;
+				PRODUCT_NAME = YYModel;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+			};
+			name = Debug;
+		};
+		CEDC370F1AB00FA67F8FE989BC823817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3440098117BF08617B7556B2B8B75B0C /* Pods-GQ4LocalizedString.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "-";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				EXECUTABLE_PREFIX = lib;
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1B28889503FA58FE9627A236ABC5E41F /* Build configuration list for PBXNativeTarget "YYModel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9F08FF5D6D8564D5197CC5265D721D2 /* Debug */,
+				9FBD98D2E2C558B013D91DC10548853E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C14363075AB5B62A9173AF90CF400F5B /* Debug */,
+				C1ECCF52DC1F978B7F32EC3AD6AE9B93 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D826E92C906113B19481C1642F8B22B0 /* Build configuration list for PBXNativeTarget "Pods-GQ4LocalizedString" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CEDC370F1AB00FA67F8FE989BC823817 /* Debug */,
+				C47EF37E89D4BD3A54BAC6A1F6D795EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D8D5C405977B60BB3696FE32B66E4579 /* Build configuration list for PBXNativeTarget "libxlsxwriter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E2A6FA31FA8CD1A034408080357A040 /* Debug */,
+				3C247C6BFC39DBEC9B74A27BEE2ABE24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,20 @@
+PODS:
+  - libxlsxwriter (0.8.3)
+  - YYModel (1.0.4)
+
+DEPENDENCIES:
+  - libxlsxwriter (~> 0.8.3)
+  - YYModel (~> 1.0.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - libxlsxwriter
+    - YYModel
+
+SPEC CHECKSUMS:
+  libxlsxwriter: 82d79840fb003d7370211efe2e4564e473727d55
+  YYModel: 2a7fdd96aaa4b86a824e26d0c517de8928c04b30
+
+PODFILE CHECKSUM: 6e0221eb05033657902497558182c6bacb815714
+
+COCOAPODS: 1.6.0.beta.1

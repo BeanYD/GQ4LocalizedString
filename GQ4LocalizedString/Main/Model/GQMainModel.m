@@ -14,6 +14,7 @@
 
 #import "GDataXMLNode.h"
 #import "GQXlsxSiModel.h"
+#import "xlsxwriter.h"
 
 @interface GQMainModel ()
 
@@ -259,6 +260,15 @@
     
     NSLog(@"new zip file path:%@", filePath);
     return filePath;
+}
+
+// 重新生成 xlsx 文件
+- (void)createNewXlsxFile {
+    // 文件保存的路径
+    NSString *documentPath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,NSUserDomainMask, YES) objectAtIndex:0];
+    NSString *filename = [documentPath stringByAppendingPathComponent:@"Localization.xlsx"];
+    
+    
 }
 
 #pragma mark - public method

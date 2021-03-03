@@ -81,7 +81,6 @@
 		D72BA3A1214765430082FA24 /* tmbstr.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA363214765430082FA24 /* tmbstr.c */; };
 		D72BA3A2214765430082FA24 /* utf8.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA365214765430082FA24 /* utf8.c */; };
 		D72BA3A3214765430082FA24 /* win32tc.c in Sources */ = {isa = PBXBuildFile; fileRef = D72BA368214765430082FA24 /* win32tc.c */; };
-		D72BA3A4214765430082FA24 /* GHUnitIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D72BA36D214765430082FA24 /* GHUnitIOS.framework */; };
 		D72BA3A5214765430082FA24 /* license-gdata.txt in Resources */ = {isa = PBXBuildFile; fileRef = D72BA36E214765430082FA24 /* license-gdata.txt */; };
 		D72BA3A6214765430082FA24 /* license-tidy.txt in Resources */ = {isa = PBXBuildFile; fileRef = D72BA36F214765430082FA24 /* license-tidy.txt */; };
 		D72BA3A7214765430082FA24 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D72BA370214765430082FA24 /* README.md */; };
@@ -368,7 +367,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D72BA2C7214762A70082FA24 /* libxml2.2.dylib in Frameworks */,
-				D72BA3A4214765430082FA24 /* GHUnitIOS.framework in Frameworks */,
 				D72BA27F214657610082FA24 /* libz.1.dylib in Frameworks */,
 				D72BA07121425C7B0082FA24 /* libiconv.2.dylib in Frameworks */,
 				E5CC8963FDFEEA6F03040507 /* libPods-GQ4LocalizedString.a in Frameworks */,

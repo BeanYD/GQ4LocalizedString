@@ -116,7 +116,9 @@
         textString = [textString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]];
         
         // text添加到数组中
-        [newSiEles addObject:textString];
+        if (textString.length > 0) {
+            [newSiEles addObject:textString];
+        }
         
         // phoneticPr <phoneticPr fontId="1" type="noConversion"/> —— GDataXMLNode
         NSArray *ticPrs = [member elementsForName:@"phoneticPr"];
@@ -129,6 +131,45 @@
             NSArray *prAttrNodes = prElem.attributes;
             
             [newSiAttrEles addObject:prAttrNodes];
+        }
+    }
+    
+    
+    // 读取sheet1.xml，位置信息表--表名为sheet1，其他表名后续兼容
+    NSString *workSheetStr = [xlStr stringByAppendingPathComponent:@"worksheets"];
+    NSString *sheet1Str = [workSheetStr stringByAppendingPathComponent:@"sheet1.xml"];
+    NSData *sheetData = [[NSData alloc] initWithContentsOfFile:sheet1Str];
+    GDataXMLDocument *sheetDoc = [[GDataXMLDocument alloc] initWithData:sheetData options:kNilOptions error:nil];
+    
+    if (!sheetDoc) return;
+    NSArray *sheetEles = [sheetDoc.rootElement elementsForName:@"sheetData"];
+    
+    for (int i = 0; i < sheetEles.count; i++) {
+        GDataXMLElement *member = sheetEles[i];
+        
+        NSArray *rowMembers = [member elementsForName:@"row"];
+        
+        if (rowMembers.count <= 1) {
+            // 数量不够
+            return;
+        }
+        
+        for (int j = 1; j < rowMembers.count; j++) {
+            GDataXMLElement *rowMember = rowMembers[j];
+            
+            NSArray *colMembers = [rowMember elementsForName:@"c"];
+            
+            for (int k = 0; k < colMembers.count; k++) {
+                GDataXMLElement *colMember = colMembers[k];
+                
+                NSArray *vMembers = [colMember elementsForName:@"v"];
+                
+                if (vMembers.count > 0) {
+                    GDataXMLElement *textEle = vMembers.firstObject;
+                    NSString *text = textEle.stringValue;
+                    NSLog(@"%@", text);
+                }
+            }
         }
     }
 
